@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'),
+       url('../fonts/Montserrat/v7/Regular.woff2') format('woff2'),
+       url('../fonts/Montserrat/v7/Regular.woff') format('woff'),
+       url('../fonts/Montserrat/v7/Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'),
+       url('../fonts/Montserrat/v7/Bold.woff2') format('woff2'),
+       url('../fonts/Montserrat/v7/Bold.woff') format('woff'),
+       url('../fonts/Montserrat/v7/Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+    font-family: 'AnimalsNormal';
+    src: url('../fonts/animals-webfont.eot');
+    src: url('../fonts/animals-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/animals-webfont.woff') format('woff'),
+         url('../fonts/animals-webfont.ttf') format('truetype'),
+         url('../fonts/animals-webfont.svg#AnimalsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?28205146');
+  src: url('../fonts/fontello.eot?28205146#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?28205146') format('woff'),
+       url('../fonts/fontello.ttf?28205146') format('truetype'),
+       url('../fonts/fontello.svg?28205146#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.svg?28205146#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="ficon-"]:before, [class*=" ficon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  font-size: 130px;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.ficon-github:before { content: '\e800'; } /* '' */
+.ficon-chat-empty:before { content: '\e801'; } /* '' */

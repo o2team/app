@@ -1,0 +1,34 @@
+/* Links styles inspired by http://tympanus.net/Development/CreativeLinkEffects/ */
+/* Effect 12: circle */
+.cl-effect-circle
+    a
+        position: relative
+    a::before, a::after
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 100px
+        height: 100px
+        border: 2px solid rgba(0,0,0,0.1)
+        border-radius: 50%
+        content: ''
+        opacity: 0
+        transition: transform 0.3s, opacity 0.3s
+        transform: translateX(-50%) translateY(-50%) scale(0.2)
+    a::after
+        width: 90px
+        height: 90px
+        border-width: 6px
+        transform: translateX(-50%) translateY(-50%) scale(0.8)
+    a:hover::before, a:hover::after, a:focus::before, a:focus::after
+        opacity: 1
+        transform: translateX(-50%) translateY(-50%) scale(1)
+
+.actions
+    cursor: default
+    list-style: none
+    padding-left: 0
+    li
+        display: inline-block
+        padding: 0 1em 0 0
+        vertical-align: middle

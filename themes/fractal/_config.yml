@@ -1,0 +1,22 @@
+logo:
+    url: img/logo-square-120.png
+
+post:
+    cover: post-default.png
+    img_dir: img/post/
+
+# baidu push
+baidu_push: false
+
+# Content
+fancybox: false
+
+# Code Highlight theme
+# Available value:
+#    normal | night | eighties | blue | bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: normal
+
+# Wechat
+wechat:
+  desc: "海海人生，无折腾不为乐。"

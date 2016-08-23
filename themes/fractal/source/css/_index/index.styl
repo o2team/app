@@ -1,0 +1,81 @@
+@import "post"
+
+.banner
+    background-color: $banner-bg
+    color: $banner-color
+    padding: 4.5em 0 2.5em 0
+    background-image: url('../img/overlay.png'), url('../img/pattern-size1.svg')
+    background-position: top left, center center
+    background-attachment: fixed, fixed
+    background-size: auto, cover
+    height: 100vh
+    min-height: 35em
+    vhc-wrap()
+    &-link
+        border-bottom-color: rgba(255, 255, 255, 0.5)
+        color: #ffffff
+    p
+        font-size: 1.5em
+        line-height: 1.35em
+    h1
+        font-size: 3.25em
+        margin-bottom: 0.5em
+    .content
+        transition: opacity 0.5s ease, transform 1s ease
+        transform: translateX(0)
+        opacity: 1
+        text-align: right
+        margin: -3.5em 4em 0 0
+        > :last-child
+            margin-bottom: 0
+    .image
+        transition: opacity 1s ease, transform 1s ease
+        transform: translateY(0)
+        opacity: 1
+        img
+            transition: opacity 0.75s ease
+            transition-delay: 0.75s
+            opacity: 1
+    .actions
+        margin-top: 1.5em
+
+.phone
+    margin: 0 0 3em 0
+    width: 13em
+    img
+        display: block
+        position: relative
+        width: 100%
+    .inner, &:before, &:after
+        display: block
+        border: solid 2px rgba(255, 255, 255, 0.25)
+    .inner
+        position: relative
+        &:before, &:after
+            content: ''
+            position: absolute
+            left: 50%
+        &:before
+            top: -1.375em
+            margin-left: -1em
+            width: 2em
+            height: 0.25em
+            border-radius: 0.5em
+            background: rgba(255, 255, 255, 0.25)
+        &:after
+            bottom: -2.75em
+            margin-left: -1em
+            width: 2em
+            height: 2em
+            border-radius: 100%
+            border: solid 2px rgba(255, 255, 255, 0.25)
+    &:before, &:after
+        content: ''
+    &:before
+        height: 2.5em
+        border-radius: 1em 1em 0 0
+        border-bottom: 0
+    &:after
+        height: 3.5em
+        border-radius: 0 0 1em 1em
+        border-top: 0

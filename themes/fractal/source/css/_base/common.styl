@@ -1,0 +1,169 @@
+html,body
+    display:block
+    height: 100%
+html
+    &.ovf-hidden
+        overflow: hidden
+        body
+            overflow: hidden
+body
+    font-family: 'Lato', Calibri, Arial, sans-serif
+    background-color: $color-bg
+    font-weight: 300
+    font-size: 16px
+    -webkit-font-smoothing: antialiased
+    //background-image: url($bgimg-body)
+    background-repeat: repeat
+a
+    color: $color-link
+    border-bottom: dotted 1px
+    text-decoration: none
+    h1 &, h2 &, h3 &, h4 &, h5 &
+        border-bottom: none
+    &:hover, &:focus
+        text-decoration: none
+        color: $color-accent
+        border-bottom: none
+
+.page-full .wrapper {
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.clr {
+    clear: both;
+    padding: 0;
+    height: 0;
+    margin: 0;
+}
+.v-center{
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+.h-center{
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.fullscreen
+    .background
+        fullscreen(0)
+
+.ani
+    visibility: hidden
+
+.btn
+    display: inline-block
+    margin-bottom: 0
+    text-align: center
+    vertical-align: middle
+    -ms-touch-action: manipulation
+    touch-action: manipulation
+    cursor: pointer
+    background-image: none
+    border: 1px solid transparent
+    white-space: nowrap
+    height: 2.85em
+    line-height: 2.95em
+    padding: 0 1.75em
+    user-select: none
+    font-size: 100%
+    font-weight: 400
+    text-transform: uppercase
+    border-radius: 6px
+    text-decoration: none
+    transition: all .3s ease-in-out
+    border: none
+    &:focus,
+    &.focus,
+    &:active:focus,
+    &:active.focus,
+    &.active:focus,
+    &.active.focus
+        outline: thin dotted
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px
+    &:hover,
+    &:focus,
+    &.focus
+        color: $color-btn-text-active
+        text-decoration: none
+    &:active,
+    &.active
+        outline: 0
+        background-image: none
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+    &-whiteline
+        border: none
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25)
+        color: $color-btn-text
+        background: 0 0
+        &:hover 
+            color: $color-btn-text
+            background-color: rgba(255, 255, 255, 0.075)
+            border: none
+    &-black
+        background: $color-btn-bg
+        color: $color-btn-text
+        border: 1px solid $color-btn-bg
+        &:hover
+            border: 1px solid $color-btn-bg
+            color: $color-btn-bg
+            background: 0 0
+    &-white
+        background: $color-btn-bg-inverse
+        color: $color-btn-text-inverse
+        &:hover
+            color: $color-btn-text-inverse
+            background: rgba(255, 255, 255, 0.75)
+    &-greyline
+        border: 1px solid $color-btn-bg
+        color: $color-btn-bg
+        position: relative
+        &:hover
+            border: 1px solid $color-btn-bg-lite
+            color: $color-btn-text
+            background-color: $color-btn-bg-lite
+
+.grid
+    &-col
+        float: left
+    &-2cols
+        clearfix()
+        .grid-col
+            width: 50%
+            &:nth-child(1)
+              padding-right: 0.5em
+            &:nth-child(2)
+              padding-left: 0.5em
+
+.blockquote-em
+    position: relative
+    font-size: 20px
+    display: inline-block
+    padding: 10px 40px
+    line-height: 30px
+    color: $color-default
+    border-left: none
+    &:before, &:after
+        position: absolute
+        width: 30px
+        height: 30px
+        font-size: 60px
+        line-height: 1
+        color: $color-bd
+    &:before
+        top: 0
+        left: 0
+        content: "\201C"
+    &:after
+        top: 0
+        right: 0
+        content: "\201D"

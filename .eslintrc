@@ -1,0 +1,10 @@
+---
+"extends":
+  - "defaults"
+"globals":
+  "jQuery": true
+  "App": true
+  "Util": true
+"env":
+  "browser": true
+

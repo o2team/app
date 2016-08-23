@@ -1,2 +1,3 @@
-# app
-Landing page for aotu.io's app
+# 轻氧APP
+
+https://app.aotu.io
