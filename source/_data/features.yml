@@ -1,0 +1,53 @@
+specials:
+  title: 匠心打造新颖资讯阅读体验
+  stitle: 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量
+  items:
+    - name: 突出资讯品牌
+      logo: fa-flag
+    - name: 跟踪阅读进度
+      logo: fa-hourglass
+    - name: 创新交互体验
+      logo: fa-lightbulb-o
+    - name: 急速同步更新
+      logo: fa-refresh
+    - name: 资讯质量保证
+      logo: fa-gavel
+brands:
+  title: 知名互联网公司/团队的资讯、活动和圈子
+  stitle: 汇聚<span class='bnum' id='bnum'>N</span>家UX、前端团队或站点（排名不分先后）
+  items:
+    - name: 凹凸实验室
+      desc: 凹凸实验室(Aotu.io，英文简称O2) 始建于2015年10月，是一个年轻基情的多终端技术团队。
+      github: //github.com/o2team 
+      preview: //aotu.io?o2src=o2app
+      logo: //misc.aotu.io/o2/img/app/blogo-o2.png
+      tags:
+        - 前端开发
+        - 多终端开发
+    - name: 京东JDC
+      desc: Hi，我们是京东的用户体验设计团队！
+      preview: //jdc.jd.com?o2src=o2app
+      logo: //misc.aotu.io/o2/img/app/blogo-jdc.png
+      tags:
+        - UX
+        - UED
+    - name: 腾讯ISUX
+      desc: 腾讯社交用户体验设计，简称ISUX (Internet Social User Experience)，成立于2011年1月11日，是腾讯集团核心、全球最具规模的UX设计团队
+      preview: //isux.tencent.com?o2src=o2app
+      logo: //misc.aotu.io/o2/img/app/blogo-isux.png
+      tags:
+        - UX
+        - UED
+    - name: 360奇舞团
+      desc: 360奇舞团（奇虎75Team）是 奇虎360公司Web平台部前端工程师 + 部分特约嘉宾 组成的一个前端团队。
+      preview: //www.75team.com/?o2src=o2app
+      logo: //misc.aotu.io/o2/img/app/blogo-75.png
+      tags:
+        - 前端开发
+    - name: AlloyTeam
+      desc: Alloy Team 来自于腾讯SNG(社交网络事业群)，我们致力于Web前端技术的研究，热衷HTML5、移动Web技术，用最酷的新技术开发各种有趣的开源项目
+      github: //github.com/AlloyTeam
+      preview: //www.alloyteam.com/?o2src=o2app
+      logo: //misc.aotu.io/o2/img/app/blogo-alloyteam.png
+      tags:
+        - 前端开发

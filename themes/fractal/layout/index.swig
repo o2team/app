@@ -5,6 +5,7 @@
 {% block main %}
 
     {% include '_partial/index/banner.swig' %}
+    {% include '_partial/index/features.swig' %}
     
 {% endblock %}
 

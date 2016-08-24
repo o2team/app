@@ -1,4 +1,4 @@
-@import "post"
+@import "features"
 
 .banner
     background-color: $banner-bg
@@ -21,27 +21,48 @@
         font-size: 3.25em
         margin-bottom: 0.5em
     .content
+        opacity: 0
+        transform: translateX(-20px)
         transition: opacity 0.5s ease, transform 1s ease
-        transform: translateX(0)
-        opacity: 1
+        .loaded &
+            transform: translateX(0)
+            opacity: 1
         text-align: right
         margin: -3.5em 4em 0 0
         > :last-child
             margin-bottom: 0
+        +mq-max(1060px)
+            margin-right: 2em
+        +desktop-down()
+            margin-right: 4em
+            max-width: 450px
     .image
         transition: opacity 1s ease, transform 1s ease
-        transform: translateY(0)
-        opacity: 1
+        transform: translateY(20px)
+        opacity: 0
+        .loaded &
+            transform: translateY(0)
+            opacity: 1
         img
+            opacity: 0
             transition: opacity 0.75s ease
             transition-delay: 0.75s
-            opacity: 1
+            .loaded &
+                opacity: 1
     .actions
         margin-top: 1.5em
+    +desktop-large-down()
+        font-size: 14px
+    +desktop-xlarge-up()
+        font-size: 18px
+    +tablet()
+        flex-direction: column-reverse
 
 .phone
-    margin: 0 0 3em 0
+    margin: 0 4em 3em 0
     width: 13em
+    +mq-max(1060px)
+        margin-right: 2em
     img
         display: block
         position: relative
@@ -79,3 +100,19 @@
         height: 3.5em
         border-radius: 0 0 1em 1em
         border-top: 0
+
+.qrcode-ios
+    width: 200px
+    height: 200px
+    border-radius: 100%
+    overflow: hidden
+    text-align: center
+    border: 1px solid rgba(255,255,255,0.25)
+    transition-delay: 0.5s !important
+    img
+        width: 120px
+        height: 120px
+        vertical-align: top
+        margin-top: 40px
+    +desktop-down()
+        display: none

@@ -9,11 +9,38 @@ html
 body
     font-family: 'Lato', Calibri, Arial, sans-serif
     background-color: $color-bg
+    color: $color-default
     font-weight: 300
     font-size: 16px
     -webkit-font-smoothing: antialiased
     //background-image: url($bgimg-body)
     background-repeat: repeat
+
+h1, h2
+    font-family: 'FZZhengHeiS', 'Lato'
+    color: $color-default
+h2
+    font-size: 1.75em
+    line-height: 1.5em
+    +tablet-down()
+        font-size: 1.25em
+h3
+    font-size: 1.5em
+    line-height: 1.5em
+    +tablet-down()
+        font-size: 1.2em
+h4
+    font-size: 1.1em
+    line-height: 1.5em
+    +tablet-down()
+        font-size: 1em
+h5
+    font-size: 0.9em
+    line-height: 1.5em
+h6
+    font-size: 0.7em
+    line-height: 1.5em
+
 a
     color: $color-link
     border-bottom: dotted 1px
@@ -51,6 +78,15 @@ a
     left:50%;
     transform:translateX(-50%);
 }
+
+.inline-list
+    cursor: default
+    list-style: none
+    padding-left: 0
+    margin-bottom: 2em
+    li
+        display: inline-block
+        padding: 0 0.8em 0
 
 .fullscreen
     .background

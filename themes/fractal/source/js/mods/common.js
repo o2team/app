@@ -33,6 +33,7 @@
         App.$win.trigger('siteLoaded');
     }).on('loaderGone', function() {
         App.$htmlBody.removeClass('ovf-hidden');
+        App.$body.addClass('loaded');
     });
 
     onResize();

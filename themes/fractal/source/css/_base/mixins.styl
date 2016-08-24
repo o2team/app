@@ -19,6 +19,23 @@ vhc-wrap($jc = center) {
   justify-content: $jc;
 }
 
+mq-min($w) {
+  @media (min-width: $w) {
+    {block}
+  }
+}
+mq-max($w) {
+  @media (max-width: $w) {
+    {block}
+  }
+}
+
+mq-range($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    {block}
+  }
+}
+
 mobile() {
   @media (max-width: 479px) {
     {block}
@@ -46,6 +63,12 @@ tablet-up() {
   }
 }
 
+desktop-down() {
+  @media (max-width: 991px) {
+    {block}
+  }
+}
+
 desktop() {
   @media (min-width: 992px) and (max-width: 1199px) {
     {block}
@@ -54,6 +77,12 @@ desktop() {
 
 desktop-up() {
   @media (min-width: 992px) {
+    {block}
+  }
+}
+
+desktop-large-down() {
+  @media (max-width: 1199px) {
     {block}
   }
 }

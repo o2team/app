@@ -62,6 +62,7 @@ twitter_site: config.twitter
         root:'{{ config.root }}',
         isHome: {{is_home()}},
         isCate: {{is_category()}},
-        isTag: {{is_tag()}}  
+        isTag: {{is_tag()}},
+        brandCnt: {{site.data.features.brands.items.length}}
     };
 </script>
