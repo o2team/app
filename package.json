@@ -1,6 +1,6 @@
 {
   "name": "轻氧(LiteO2)",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "hexo g",
@@ -11,7 +11,7 @@
     "version": "3.2.2"
   },
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.22.0",
     "fs-extra": "^0.30.0",
     "hexo": "^3.2.2",
     "hexo-deployer-git": "0.2.0",
@@ -30,7 +30,7 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-util": "^0.6.0",
-    "hexo-wordcount": "1.2.0",
+    "hexo-wordcount": "1.2.3",
     "lodash": "^4.14.2",
     "lunr": "github:codepiano/lunr.js.git"
   },
