@@ -14,12 +14,26 @@
     &-link
         border-bottom-color: rgba(255, 255, 255, 0.5)
         color: #ffffff
+        &:hover
+            color: #fefefe
     p
         font-size: 1.5em
         line-height: 1.35em
+        +desktop-down()
+            font-size: 1.2em
+            line-height: normal
+        +tablet-down()
+            font-size: 1em
     h1
         font-size: 3.25em
         margin-bottom: 0.5em
+        +desktop-down()
+            font-size: 2em
+            margin-top: 0
+        +tablet-down()
+            font-size: 1.8em
+    &-desc
+        margin-bottom: 1.5em
     .content
         opacity: 0
         transform: translateX(-20px)
@@ -34,8 +48,8 @@
         +mq-max(1060px)
             margin-right: 2em
         +desktop-down()
-            margin-right: 4em
-            max-width: 450px
+            margin: 0 0 2em 0
+            text-align: center
     .image
         transition: opacity 1s ease, transform 1s ease
         transform: translateY(20px)
@@ -55,14 +69,23 @@
         font-size: 14px
     +desktop-xlarge-up()
         font-size: 18px
-    +tablet()
+    +desktop-down()
         flex-direction: column-reverse
+        padding: 2em 1em 0.1em 1em
+    +mobile()
+        height: auto
+        min-height: 0
 
 .phone
     margin: 0 4em 3em 0
     width: 13em
     +mq-max(1060px)
         margin-right: 2em
+    +desktop-down()
+        margin-right: 0
+    +mobile()
+        font-size: 0.8em
+        max-width: 60vw
     img
         display: block
         position: relative

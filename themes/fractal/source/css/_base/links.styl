@@ -32,3 +32,13 @@
         display: inline-block
         padding: 0 1em 0 0
         vertical-align: middle
+        &:last-child
+            padding-right: 0
+        +mobile()
+            padding: 1em 0 0 0
+            display: block
+            width: 100%
+            a
+                display: block
+            &:first-child
+                padding-top: 0
