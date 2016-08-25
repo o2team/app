@@ -11,6 +11,4 @@
         }, 1000);
     };
 
-    $('#bnum').html(App.brandCnt);
-
 })(jQuery, App);

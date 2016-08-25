@@ -1,8 +1,8 @@
-secStyle2()
-    background-color: #fbfbfb
-    color: #999999
-    text-align: center
 .sec
+    &-style1
+        background-color: #fbfbfb
+        color: #999999
+        text-align: center
     padding: 4.5em 0 2.5em 0
     background-color: #ffffff
     border-bottom: solid 2px #eeeeee
@@ -14,6 +14,7 @@ secStyle2()
         max-width: 50em
     &-hd
         margin: 0 0 2.5em 0
+        text-align: center
         &:after
             border-bottom: solid 2px #e6e6e6
             display: block
@@ -25,25 +26,16 @@ secStyle2()
         +tablet-down()
             font-size: 1em
 
-.brands
+.features
     padding-bottom: 4.5em
 
-.features
-    secStyle2()
-    &-list
-        @extend .inline-list
-        li
-            padding: 0 2.5em 0 0
-            color: #e0e0e0
-            font-size: 2.75rem
-            &:last-child
-                padding-right: 0
-            &.active
-                color: $color-default
+.brands
+    margin: 0.8em 0
 
 .alter
     display: flex
     align-items: center
+    text-align: left
     +mobile()
         flex-direction: column !important
     &-hd
@@ -65,9 +57,6 @@ secStyle2()
     padding-top: 3em
     margin: 3em 0 0 0
     &:nth-child(2n)
-        flex-direction: row-reverse
-        .spotlight-bd
-            text-align: right
         .spotlight-hd
             margin: 0 0 0 3em
     &:first-child
@@ -94,30 +83,3 @@ secStyle2()
     &-bd
         h3
             margin-top: 0
-
-.specials
-    secStyle2()
-    &-list
-        @extend .inline-list
-        font-size: 1.2em
-        text-align: center
-        +tablet-down()
-            font-size: 1em
-        li
-            margin: 0.8em 0
-            padding: 0 1em 0
-        .special
-            vhc-wrap(flex-start)
-        .icon-wrap
-            color: #e0e0e0
-            font-size: 14px
-            margin-right: 0.5em
-            width: 30px
-            height: 30px
-            line-height: 30px
-            border: 1px solid #eee
-            border-radius: 50%
-        .label
-            display: inline-block
-            vertical-align: middle
-            color: $color-grey

@@ -1,7 +1,22 @@
-specials:
-  title: 匠心打造新颖资讯阅读体验
-  stitle: 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量
+channels:
+  title: 大核心内容版块
+  stitle: 满足交流与学习
   items:
+    - name: 资讯（V1.0）
+      desc: 源于知名公司、团队或站点
+      logo: fa-book
+    - name: 活动（V2.0)
+      logo: fa-calendar
+      desc: 把握行业线上线下活动动态
+    - name: 圈子（V3.0）
+      logo: fa-group
+      desc: 各种有趣话题的滋生地
+specials:
+  title: 匠心打造新颖体验
+  stitle: 不一样的阅读快感
+  items:
+    - name: 高质资讯信息
+      logo: fa-gavel
     - name: 突出资讯品牌
       logo: fa-flag
     - name: 跟踪阅读进度
@@ -10,11 +25,9 @@ specials:
       logo: fa-lightbulb-o
     - name: 急速同步更新
       logo: fa-refresh
-    - name: 资讯质量保证
-      logo: fa-gavel
 brands:
-  title: 知名互联网公司/团队的资讯、活动和圈子
-  stitle: 汇聚<span class='bnum' id='bnum'>N</span>家UX、前端团队或站点（排名不分先后）
+  title: 大公司、团队或站点
+  stitle: 排名不分先后
   items:
     - name: 凹凸实验室
       desc: 凹凸实验室(Aotu.io，英文简称O2) 始建于2015年10月，是一个年轻基情的多终端技术团队。
