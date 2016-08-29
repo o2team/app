@@ -45,7 +45,7 @@ brands:
         - UX
         - UED
     - name: 腾讯ISUX
-      desc: 腾讯社交用户体验设计，简称ISUX (Internet Social User Experience)，成立于2011年1月11日，是腾讯集团核心、全球最具规模的UX设计团队
+      desc: 腾讯社交用户体验设计，简称ISUX (Internet Social User Experience)，成立于2011年1月11日，是腾讯集团核心、全球最具规模的UX设计团队。
       preview: //isux.tencent.com?o2src=o2app
       logo: //misc.aotu.io/o2/img/app/blogo-isux.png
       tags:
@@ -58,7 +58,7 @@ brands:
       tags:
         - 前端开发
     - name: AlloyTeam
-      desc: Alloy Team 来自于腾讯SNG(社交网络事业群)，我们致力于Web前端技术的研究，热衷HTML5、移动Web技术，用最酷的新技术开发各种有趣的开源项目
+      desc: Alloy Team 来自于腾讯SNG(社交网络事业群)，我们致力于Web前端技术的研究，热衷HTML5、移动Web技术，用最酷的新技术开发各种有趣的开源项目。
       github: //github.com/AlloyTeam
       preview: //www.alloyteam.com/?o2src=o2app
       logo: //misc.aotu.io/o2/img/app/blogo-alloyteam.png

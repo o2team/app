@@ -1,4 +1,4 @@
-<section class="sec sec-style1 channels">
+<section class="sec sec-style1 channels" id="features">
     <div class="sec-inner">
         <header class="sec-hd">
             <h2 class="sec-tit">{{site.data.features.channels.items.length}}{{site.data.features.channels.title}}</h2>
@@ -30,7 +30,7 @@
     </div>
 </section>
 
-<section class="sec sec-style1 features" id="features">
+<section class="sec sec-style1 features">
     <div class="sec-inner">
         <header class="sec-hd">
             <h2 class="sec-tit">{{site.data.features.brands.items.length}}{{site.data.features.brands.title}}</h2>
