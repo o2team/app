@@ -70,15 +70,31 @@
             .loaded &
                 opacity: 1
     .phones
+        +desktop-down()
+            margin: 0 0 40px 0
+        +tablet-down()
+            margin: 0 0 30px 0
         .loaded &
             img:nth-child(1)
                 animation: slide_from_top 2s
                 width: 167px
                 vertical-align: bottom
                 margin-right: 8px
+                +desktop-down()
+                    width: 132px
+                +tablet-down()
+                    width: 110px
+                +mq-max(360px)
+                    width: 75px
             img:nth-child(2)
                 animation: slide_from_bottom 2s
                 width: 197px
+                +desktop-down()
+                    width: 160px
+                +tablet-down()
+                    width: 125px
+                +mq-max(360px)
+                    width: 90px
         @keyframes slide_from_top
             0%
                 transform: translateY(200px)
