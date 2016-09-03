@@ -5,9 +5,14 @@
         $win: $(window),
         $doc: $(document),
         $body: $('body'),
+        $html: $('html'),
         $htmlBody: $('html, body'),
         $fullPages: $('.fullscreen')
     });
+
+    if(App.browser) {
+        App.$html.addClass(App.browser.os.android ? 'android' : '');
+    }
 
     function onResize() {
         App.winH = App.$win.height();
@@ -24,6 +29,16 @@
         }
     };
 
+    function goToHash() {
+        var hash = location.hash,
+            $hash = $(hash);
+        if(hash.length > 0 && $hash.length > 0) {
+            App.$htmlBody.animate({
+                scrollTop: $hash.offset().top
+            }, 1000);
+        }
+    }
+
     App.$win.on('resize', function() {
         onResize();
         App.$win.trigger('siteResized');
@@ -34,6 +49,7 @@
     }).on('loaderGone', function() {
         App.$htmlBody.removeClass('ovf-hidden');
         App.$body.addClass('loaded');
+        goToHash();
     });
 
     onResize();

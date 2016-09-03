@@ -22,6 +22,7 @@
 {{ js('js/libs/jquery.scrolly') }}
 {{ js('js/libs/base64') }}
 {{ js('js/mods/util') }}
+{{ js('js/mods/browser') }}
 {{ js('js/mods/common') }}
 {{ js('js/mods/console') }}
 <!-- endbuild -->

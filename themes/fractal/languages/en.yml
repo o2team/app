@@ -1,5 +1,5 @@
 menu:
-  docs: Docs
+  news: News
   archive: TimeLine
   tags: Tags
   cates: Categories
@@ -12,6 +12,7 @@ menu:
   brand: Brand
   home: Home
   source: Source
+  download: Download
 
 button:
   learn_more: Learn More

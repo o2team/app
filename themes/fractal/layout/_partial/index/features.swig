@@ -49,3 +49,15 @@
         </div>
     </div>
 </section>
+
+<section class="sec copyrights" id="copyright">
+    <div class="sec-inner">
+        <header class="sec-hd">
+            <h2 class="sec-tit">{{site.data.features.copyright.title}}</h2>
+            <p class="sec-stit">{{site.data.features.copyright.stitle}}</p>
+        </header>
+        <div class="sec-bd">
+            {{site.data.features.copyright.desc}}
+        </div>
+    </div>
+</section>

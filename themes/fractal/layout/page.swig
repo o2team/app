@@ -1,4 +1,5 @@
 {% extends '_layout.swig' %}
+
 {% block title %}
   {% set page_title_suffix = ' | ' + config.title %}
   {% if page.type === "cates" %}

@@ -64,3 +64,7 @@ brands:
       logo: //misc.aotu.io/o2/img/app/blogo-alloyteam.png
       tags:
         - 前端开发
+copyright:
+  title: 内容版权声明
+  stitle: Open Oriented
+  desc: 『轻氧』是绿色的互联网专业资讯信息的搬运者、包装者和分发者，应用内的资讯内容由『凹凸实验室』基于各大公司、团队或个人站点的简易信息聚合协议（RSS、Atom等）获取，其版权归属于资讯内容的原作者。如果有意见或建议，欢迎通过APP内的反馈功能留言，我们会及时响应处理。

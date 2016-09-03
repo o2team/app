@@ -48,7 +48,7 @@
             transform: translateX(0)
             opacity: 1
         text-align: right
-        margin: -3.5em 4em 0 0
+        margin: 0 4em 0 0
         > :last-child
             margin-bottom: 0
         +mq-max(1060px)
@@ -167,11 +167,10 @@
         border-top: 0
 
 .qrcode-ios
-    margin: 0 0 0 auto
+    margin: 25px 0 0 auto
     position: relative
-    top: 120px
-    width: 140px
-    height: 140px
+    width: 180px
+    height: 180px
     // border-radius: 100%
     overflow: hidden
     text-align: center
@@ -186,3 +185,12 @@
         // margin-top: 40px
     +desktop-down()
         display: none
+
+.alert-android
+    display: none;
+
+.android
+    .btn-download
+        display: none
+    .alert-android
+        display: block

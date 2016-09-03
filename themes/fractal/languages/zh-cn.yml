@@ -1,5 +1,5 @@
 menu:
-  docs: 文档
+  news: 版本记录
   tags: 标签
   archive: 博客
   cates: 分类
@@ -13,6 +13,7 @@ menu:
   brand: 品牌
   home: 首页
   source: 源码
+  download: 下载APP
 
 button:
   learn_more: 了解详情 
