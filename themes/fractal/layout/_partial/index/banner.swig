@@ -4,8 +4,8 @@
         <p class="banner-tit">{{config.fulltitle}}</p>
         <p class="banner-desc">{{config.subtitle_desc}}</p>
         <ul class="actions">
-            <li><a href="{{config.iosLink}}" class="btn btn-white btn-download"><i class="fa fa-download"></i>&nbsp;V{{config.version}}</a></li>
-            <li><a href="{{url_for('notes')}}" class="btn btn-whiteline btn-more"><i class="fa fa-chevron-right"></i>&nbsp;版本详情</a></li>
+            <li class="btn-wrap btn-wrap-download"><a href="{{config.iosLink}}" class="btn btn-white btn-download"><i class="fa fa-download"></i>&nbsp;V{{config.version}}</a></li>
+            <li class="btn-wrap btn-wrap-more"><a href="{{url_for('notes')}}" class="btn btn-whiteline btn-more"><i class="fa fa-chevron-right"></i>&nbsp;版本详情</a></li>
         </ul>
         <div class="alert alert-danger alert-android">
             Android版本正在开发中，敬请期待.

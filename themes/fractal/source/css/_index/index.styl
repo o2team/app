@@ -48,13 +48,13 @@
             transform: translateX(0)
             opacity: 1
         text-align: right
-        margin: 0 4em 0 0
+        padding: 0 4em 0 0
         > :last-child
             margin-bottom: 0
         +mq-max(1060px)
-            margin-right: 2em
+            padding-right: 2em
         +desktop-down()
-            margin: 0 0 2em 0
+            padding: 0 0 2em 0
             text-align: center
     .image
         transition: opacity 1s ease, transform 1s ease
@@ -85,7 +85,7 @@
                 +tablet-down()
                     width: 110px
                 +mq-max(360px)
-                    width: 75px
+                    width: 70px
             img:nth-child(2)
                 animation: slide_from_bottom 2s
                 width: 197px
@@ -94,7 +94,7 @@
                 +tablet-down()
                     width: 125px
                 +mq-max(360px)
-                    width: 90px
+                    width: 85px
         @keyframes slide_from_top
             0%
                 transform: translateY(200px)
@@ -116,7 +116,7 @@
         padding: 2em 1em 0.1em 1em
     +mobile()
         height: auto
-        min-height: 0
+        min-height: 100vh
 
 .phone
     margin: 0 4em 3em 0
@@ -190,7 +190,11 @@
     display: none;
 
 .android
-    .btn-download
+    .btn-wrap-download
         display: none
+    .btn-wrap-more
+        display: block
+    .btn-more
+        display: block
     .alert-android
         display: block
