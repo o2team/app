@@ -33,9 +33,7 @@
         var hash = location.hash,
             $hash = $(hash);
         if(hash.length > 0 && $hash.length > 0) {
-            App.$htmlBody.animate({
-                scrollTop: $hash.offset().top
-            }, 1000);
+            window.scrollTo(0, $hash.offset().top);
         }
     }
 

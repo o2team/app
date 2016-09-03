@@ -2,15 +2,18 @@
     flex: none
 .main
     flex: 1 0 auto
+    +tablet-down()
+        width: 100%
 .article
-    padding: 40px 0
+    padding: 20px 0
     &-header
         padding-bottom: 20px
+        a
+            color: #444
     &-date
         color: #999
         text-decoration: none
         display: inline-block
-        margin-top: 1em
         border-bottom: none
     &-content
         line-height: 1.6em

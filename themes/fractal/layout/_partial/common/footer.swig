@@ -21,6 +21,7 @@
 {{ js('js/libs/jquery.animatecss') }}
 {{ js('js/libs/jquery.scrolly') }}
 {{ js('js/libs/base64') }}
+{{ js('js/libs/collapse') }}
 {{ js('js/mods/util') }}
 {{ js('js/mods/browser') }}
 {{ js('js/mods/common') }}
