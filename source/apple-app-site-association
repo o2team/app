@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "1135769608.com.Aurora.www",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
