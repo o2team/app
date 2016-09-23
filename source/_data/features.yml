@@ -23,47 +23,139 @@ specials:
       logo: fa-hourglass
     - name: 创新交互体验
       logo: fa-lightbulb-o
-    - name: 急速同步更新
-      logo: fa-refresh
+    # - name: 急速同步更新
+    #   logo: fa-refresh
 brands:
   title: 大公司、团队或站点
   stitle: 排名不分先后
   items:
-    - name: 凹凸实验室
-      desc: 凹凸实验室(Aotu.io，英文简称O2) 始建于2015年10月，是一个年轻基情的多终端技术团队。
-      github: //github.com/o2team 
-      preview: //aotu.io?o2src=o2app
-      logo: //misc.aotu.io/o2/img/app/blogo-o2.png
-      tags:
-        - 前端开发
-        - 多终端开发
-    - name: 京东JDC
-      desc: Hi，我们是京东的用户体验设计团队！
-      preview: //jdc.jd.com?o2src=o2app
-      logo: //misc.aotu.io/o2/img/app/blogo-jdc.png
-      tags:
-        - UX
-        - UED
-    - name: 腾讯ISUX
-      desc: 腾讯社交用户体验设计，简称ISUX (Internet Social User Experience)，成立于2011年1月11日，是腾讯集团核心、全球最具规模的UX设计团队。
-      preview: //isux.tencent.com?o2src=o2app
-      logo: //misc.aotu.io/o2/img/app/blogo-isux.png
-      tags:
-        - UX
-        - UED
-    - name: 360奇舞团
-      desc: 360奇舞团（奇虎75Team）是 奇虎360公司Web平台部前端工程师 + 部分特约嘉宾 组成的一个前端团队。
-      preview: //www.75team.com/?o2src=o2app
-      logo: //misc.aotu.io/o2/img/app/blogo-75.png
-      tags:
-        - 前端开发
-    - name: AlloyTeam
-      desc: Alloy Team 来自于腾讯SNG(社交网络事业群)，我们致力于Web前端技术的研究，热衷HTML5、移动Web技术，用最酷的新技术开发各种有趣的开源项目。
-      github: //github.com/AlloyTeam
-      preview: //www.alloyteam.com/?o2src=o2app
-      logo: //misc.aotu.io/o2/img/app/blogo-alloyteam.png
-      tags:
-        - 前端开发
+      - key: aotu
+        name: 凹凸实验室
+        website: https://aotu.io/
+        language: zh_CN
+        intro: 凹凸实验室(Aotu.io，英文简称O2) 始建于2015年10月，是一个年轻基情的技术团队。
+      - key: isux
+        name: 腾讯 ISUX
+        website: http://isux.tencent.com/
+        language: zh_CN
+        intro: 腾讯社交用户体验设计，是腾讯集团核心、全球最具规模的UX设计团队。
+      - key: 75team
+        name: 奇舞团
+        website: http://www.75team.com/
+        language: zh_CN
+        intro: 360奇舞团是奇虎360公司Web平台部前端工程师和部分特约嘉宾组成的一个前端团队。
+      - key: alloyteam
+        name: AlloyTeam
+        website: http://www.alloyteam.com
+        language: zh_CN
+        intro: 腾讯Web前端团队 – Alloy Team 来自于腾讯SNG，致力于Web前端技术的研究。
+      - key: 75team_weekly
+        name: 奇舞周刊
+        website: http://old.75team.com/weekly/
+        language: zh_CN
+        intro: 奇虎奇舞团收集每周前端精华文章，集结成册，每周五推送。
+      - key: ali_mux
+        name: 阿里 MUX
+        website: http://mux.alimama.com
+        language: zh_CN
+        intro: 阿里妈妈的用户体验部门，负责淘宝的广告业务以及阿里妈妈的用户体验工作。
+      - key: baidu_efe
+        name: 百度 EFE
+        website: http://efe.baidu.com
+        language: zh_CN
+        intro: 百度EFE前身是ECOM前端团队，后经过技术的发展，逐渐形成一套完善的前端技术体系。
+      - key: baidu_eux
+        name: 百度 EUX
+        website: http://efe.baidu.com
+        language: zh_CN
+        intro: 百度企业产品用户体验中心。
+      - key: baidu_fex
+        name: 百度 FEX
+        website: http://fex.baidu.com
+        language: zh_CN
+        intro: 百度前端研发部, 做最专业的前端。
+      - key: baidu_mux
+        name: 百度 MUX
+        website: http://mux.baidu.com
+        language: zh_CN
+        intro: 百度移动用户体验部。
+      - key: ctrip_ued
+        name: 携程 UED
+        website: http://ued.ctrip.com
+        language: zh_CN
+        intro: 携程设计委员会，我们一起制定携程产品的设计规范。
+      - key: taobao_fed
+        name: 淘宝 FED
+        website: http://taobaofed.org
+        language: zh_CN
+        intro: 淘宝前端团队，用技术为体验提供无限可能。
+      - key: tencent_mxd
+        name: 腾讯 MXD
+        website: http://mxd.tencent.com
+        language: zh_CN
+        intro: 我们是腾讯移动互联网设计团队，关注用户体验的各个层面。
+      - key: uxren
+        name: UXRen
+        website: http://uxren.cn
+        language: zh_CN
+        intro: 用户体验人专业社区，国内最接地气的用户体验从业者社区。
+      - key: aliued
+        name: 阿里 UED
+        website: http://www.aliued.cn
+        language: zh_CN
+        intro: 阿里巴巴（中国站）用户体验设计部，U一点设计UED团队。
+      - key: baidu_ued
+        name: 百度 UED
+        website: http://ued.baidu.com
+        language: zh_CN
+        intro: 百度搜索用户体验中心，创建搜索引擎的极致用户体验。
+      - key: cdc
+        name: 腾讯 CDC
+        website: http://cdc.tencent.com
+        language: zh_CN
+        intro: 腾讯用户研究与体验设计部，致力于提升腾讯产品的用户体验，探索互联网生态体验创新。
+      - key: ixdc
+        name: IxDC
+        website: http://ixdc.org
+        language: zh_CN
+        intro: 一家在2010年成立的社会组织，引领中国交互设计行业发展。
+      - key: tgideas
+        name: 腾讯游戏 TGideas
+        website: http://tgideas.qq.com
+        language: zh_CN
+        intro: 腾讯游戏官方设计团队，是一支专注于运营和营销领域的用户体验设计团队。
+      - key: ui_cn
+        name: UI中国
+        website: http://www.ui.cn
+        language: zh_CN
+        intro: 专业界面交互设计平台，界面设计垂直社区、中国人气最高的图形界面交互设计平台。
+      - key: uisdc
+        name: 优设 UISDC
+        website: http://www.ui.cn
+        language: zh_CN
+        intro: 优秀网页设计联盟，是有着良好职业交流氛围的网页设计行业联盟。
+
+overseasBrands:
+  title: 另外还新增
+  title_2: 海外精选频道，满足你的好奇心
+  stitle: 目前以前端内容为主
+  items:
+      - key: smashing
+        name: Smashing Magazine
+        website: https://www.smashingmagazine.com
+        language: en_US
+        intro: 来自于德国，是一个提供高质量内容的设计社区。
+      - key: web_design_weekly
+        name: Web Design Weekly
+        website: https://web-design-weekly.com
+        language: en_US
+        intro: All things related to web design. Tips and tools for design and development.
+      - key: codrops
+        name: Codrops
+        website: http://tympanus.net/codrops/
+        language: en_US
+        intro: All about the latest web trends, techniques and new possibilities.
+
 copyright:
   title: 内容版权声明
   stitle: Open Oriented

@@ -39,10 +39,30 @@
         <div class="brands">
             {% for item in site.data.features.brands.items %}
             <section class="alter spotlight">
-                <div class="alter-hd spotlight-hd"><a href="{{item.preview}}" target="_blank"><img src="{{item.logo}}" alt="{{item.name}}" /></a></div>
+                <div class="alter-hd spotlight-hd"><a href="{{item.website}}?o2src=o2app" target="_blank"><i class="origin_cn origin_cn-{{item.key}}"></i></a></div>
                 <div class="alter-bd spotlight-bd">
-                    <h3><a href="{{item.preview}}" target="_blank" title="{{item.name}}">{{item.name}}</a></h3>
-                    <p>{{item.desc}}</p>
+                    <h3><a href="{{item.website}}?o2src=o2app" target="_blank" title="{{item.name}}">{{item.name}}</a></h3>
+                    <p>{{item.intro}}</p>
+                </div>
+            </section>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="sec sec-style1 features">
+    <div class="sec-inner">
+        <header class="sec-hd">
+            <h2 class="sec-tit">{{site.data.features.overseasBrands.title}}{{site.data.features.overseasBrands.items.length}}{{site.data.features.overseasBrands.title_2}}</h2>
+            <p class="sec-stit">{{site.data.features.overseasBrands.stitle}}</p>
+        </header>
+        <div class="brands">
+            {% for item in site.data.features.overseasBrands.items %}
+            <section class="alter spotlight">
+                <div class="alter-hd spotlight-hd"><a href="{{item.website}}?o2src=o2app" target="_blank"><i class="origin_en origin_en-{{item.key}}"></i></a></div>
+                <div class="alter-bd spotlight-bd">
+                    <h3><a href="{{item.website}}?o2src=o2app" target="_blank" title="{{item.name}}">{{item.name}}</a></h3>
+                    <p>{{item.intro}}</p>
                 </div>
             </section>
             {% endfor %}

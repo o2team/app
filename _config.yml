@@ -4,7 +4,7 @@
 
 # Site
 title: Aotu.io
-subtitle: 轻氧
+subtitle: 轻氧App
 subtitle_desc: 凹凸实验室（<a href='//aotu.io' class='banner-link' target="_blank">aotu.io</a>）出品
 fulltitle: 聚焦知名互联网公司、团队或站点的专业资讯APP
 slogan: 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量
@@ -14,7 +14,7 @@ description: 凹凸实验室(aotu.io)出品的一款聚焦知名互联网公司�
 author: 凹凸实验室
 language: zh-cn
 timezone: Asia/Shanghai
-version: 1.5.0
+version: 1.2.0
 
 
 # URL
