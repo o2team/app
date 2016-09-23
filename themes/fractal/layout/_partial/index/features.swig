@@ -53,7 +53,7 @@
 <section class="sec sec-style1 features">
     <div class="sec-inner">
         <header class="sec-hd">
-            <h2 class="sec-tit">{{site.data.features.overseasBrands.title}}{{site.data.features.overseasBrands.items.length}}{{site.data.features.overseasBrands.title_2}}</h2>
+            <h2 class="sec-tit">{{site.data.features.overseasBrands.title}}</h2>
             <p class="sec-stit">{{site.data.features.overseasBrands.stitle}}</p>
         </header>
         <div class="brands">

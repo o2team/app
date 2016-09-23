@@ -136,9 +136,8 @@ brands:
         intro: 优秀网页设计联盟，是有着良好职业交流氛围的网页设计行业联盟。
 
 overseasBrands:
-  title: 另外还新增
-  title_2: 海外精选频道，满足你的好奇心
-  stitle: 目前以前端内容为主
+  title: 另外还新增「海外精选频道」
+  stitle: 纯英文，目前以前端内容为主
   items:
       - key: smashing
         name: Smashing Magazine
