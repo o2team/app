@@ -15,7 +15,7 @@
             <img src="img/ios-qr.png" alt="IOS App"/>
         </div>
     </div>
-    <div class="image phones">
+    <div class="image phones wait-for-img">
         <div class="inner">
             <img src="img/screen_1.png" alt="{{config.subtitle}}"/>
             <img src="img/screen_2.png" alt="{{config.subtitle}}"/>

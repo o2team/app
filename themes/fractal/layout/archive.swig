@@ -9,13 +9,21 @@
 {% block main %}
 
 <div class="container main">
-{% for post in page.posts %}
-{% if loop.index == 1 %}
-    {{ partial('_partial/post/main', {post: post}) }}
-{% else %}
-    {{ partial('_partial/post/mini', {post: post}) }}
-{% endif %}
-{% endfor %}
+    <div class="posts">
+    {% for post in page.posts %}
+
+        {{ partial('_partial/post/main', {post: post}) }}
+
+        {#
+        {% if loop.index == 1 %}
+            {{ partial('_partial/post/main', {post: post}) }}
+        {% else %}
+            {{ partial('_partial/post/mini', {post: post}) }}
+        {% endif %}
+        #}
+
+    {% endfor %}
+    </div>
 </div>
 
 {% endblock %}
