@@ -17,8 +17,8 @@
     </div>
     <div class="image phones wait-for-img">
         <div class="inner">
-            <img src="img/screen_1.png" alt="{{config.subtitle}}"/>
-            <img src="img/screen_2.png" alt="{{config.subtitle}}"/>
+            <img src="//storage.360buyimg.com/mtd/home/screen_11478281631993.png" alt="{{config.subtitle}}"/>
+            <img src="//storage.360buyimg.com/mtd/home/screen_21478281632046.png" alt="{{config.subtitle}}"/>
         </div>
     </div>
 </header>
