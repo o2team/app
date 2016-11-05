@@ -6,7 +6,7 @@
     {{partial('_partial/common/head')}}
 </head>
 <body class="{% block page_class %}{% endblock %}">
-    <div class="wx_cover">
+    <div class="wx_cover" style="display:none;width:1px;height:1px;overflow:hidden">
         <img src="{{url_for('img/logo-sq500.jpg')}}" alt="LiteO2"/>
     </div>
     {% block prebody %}{% endblock %}
