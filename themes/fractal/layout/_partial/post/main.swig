@@ -12,5 +12,4 @@
   <div class="article-content" itemprop="articleBody">
     {{ page_anchor(post.content) }}
   </div>
-  {{ partial('partial/comment') }}
 </article>
