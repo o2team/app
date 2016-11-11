@@ -20,7 +20,7 @@
 {% block main %}
 <div class="tarot">
   <div class="tarot-hd">
-    「执念卡」- 虚空之眼
+    「执念卡」- 骚年打网球不
   </div>
   <div class="tarot-bd">
     <div class="swiper-container mm-swiper" id="swiper">
@@ -29,6 +29,9 @@
               {{ partial('_item', {item: item, idx: loop.index}) }}
         {% endfor %}
       </div>
+    </div>
+    <div class="arr-left bounce-left" id="arr">
+      <i class="fa fa-long-arrow-right"></i>
     </div>
   </div>
 </div>
@@ -39,6 +42,7 @@
 {% block pagejs %}
 <script>
 App.$win.on('siteLoaded', function() {
+  var $arr = $('#arr').addClass('animate');
   var swiper = new Swiper('#swiper', {
       pagination: false,
       effect: 'coverflow',
@@ -51,6 +55,13 @@ App.$win.on('siteLoaded', function() {
           depth: 100,
           modifier: 1,
           slideShadows : true
+      },
+      onSlideChangeEnd: function(inst) {
+        if(inst.activeIndex === 0) {
+          $arr.addClass('animate');
+        } else {
+          $arr.removeClass('animate');
+        }
       }
   });
 });

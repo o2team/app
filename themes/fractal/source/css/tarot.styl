@@ -32,3 +32,29 @@ body
 .mm-slide
     background-position:center
     background-size:cover
+
+.arr-left
+    position: fixed
+    right: 15px
+    top: 50%
+    z-index: 9998
+    font-size: 20px
+    color: #000
+    margin-top: -14px
+    visibility: hidden
+
+.animate
+    animation-iteration-count: infinite
+    animation-fill-mode:both
+    animation-duration:2s
+    visibility: visible
+
+.bounce-left
+    animation-name: bounce-left 
+    
+
+@keyframes bounce-left {
+	0%, 20%, 50%, 80%, 100% {transform: translateX(0);opacity: 1;}
+	40% {transform: translateX(-30px);opacity: 0.3;}
+	60% {transform: translateX(-15px);}
+}
