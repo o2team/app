@@ -4,10 +4,11 @@
     <meta charset="utf-8"/>
     <title>{% block title %}{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}「{{ config.subtitle }}」{% endblock %}</title>
     {{partial('_partial/common/head')}}
+    {% block head %} {% endblock %}
 </head>
 <body class="{% block page_class %}{% endblock %}">
     <div class="wx_cover" style="display:none;width:1px;height:1px;overflow:hidden">
-        <img src="{{url_for('img/logo-sq500.jpg')}}" alt="LiteO2"/>
+        <img src="{{url_for(page.wxcover | default('img/logo-sq500.jpg'))}}" alt="LiteO2"/>
     </div>
     {% block prebody %}{% endblock %}
 

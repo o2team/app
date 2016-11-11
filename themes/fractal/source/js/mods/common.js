@@ -46,48 +46,29 @@
         goToHash();
     });
 
-    function finishLoaded () {
-        console.log('Site finish loaded.') 
+    function imgLoaded() {
         onResize();
         loader.destroy();
         App.$win.trigger('siteLoaded');
     }
 
-    function waitForLoaded () {
-        var imgElems = document.querySelectorAll('.wait-for-img img')
-        if (!imgElems.length) {
-            console.log('Finish loaded without any images waiting.')
-            return finishLoaded()
-        }
+    App.$body.imagesLoaded({
+        background: '.lazy-bg'
+    }).always( function( instance ) {
+        //console.log('all images loaded');
+    })
+    .done( function( instance ) {
+        //console.log('all images successfully loaded');
+        imgLoaded();
+    })
+    .fail( function() {
+        //console.log('all images loaded, at least one is broken');
+    })
+    .progress( function( instance, image ) {
+        //var result = image.isLoaded ? 'loaded' : 'broken';
+        //console.log( 'image is ' + result + ' for ' + image.img.src );
+    });
 
-        var doneCount = 0, timeoutToken
-        function imgOnLoadHandler () {
-            doneCount++
-            if (doneCount === imgElems.length) {
-                timeoutToken && clearTimeout(timeoutToken)
-                finishLoaded()
-            }
-        }
-
-        // still reveal page if images are loaded overtime
-        timeoutToken = setTimeout(function () {
-            console.log('Images loaded overtime, finished: %s/%s', doneCount, imgElems.length)
-            finishLoaded()
-        }, 6000)
-        
-        // track down images fetch status
-        Array.prototype.slice.call(imgElems).forEach(function (img) {
-            if (img.complete) {
-                return imgOnLoadHandler()
-            } else {
-                img.onload = imgOnLoadHandler
-                img.onerror = imgOnLoadHandler
-                img.onabort = imgOnLoadHandler
-            }
-        })
-    }
-
-    waitForLoaded();
     onResize();
 
 })(jQuery, App);

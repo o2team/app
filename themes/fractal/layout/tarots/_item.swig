@@ -1,0 +1,1 @@
+<div class="swiper-slide mm-slide lazy-bg" style="background-image:url({{item.pic}})"></div>

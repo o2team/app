@@ -20,6 +20,7 @@
 {{ js('js/libs/jquery.hammer') }}
 {{ js('js/libs/jquery.animatecss') }}
 {{ js('js/libs/jquery.scrolly') }}
+{{ js('js/libs/imagesloaded.pkgd') }}
 {{ js('js/libs/base64') }}
 {{ js('js/libs/collapse') }}
 {{ js('js/mods/util') }}
