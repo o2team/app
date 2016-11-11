@@ -1,5 +1,5 @@
 layout: tarots/mm
-title: 无敌是多么的可怕
+title: 执念的力量
 data: mms
 comments: false
 ---

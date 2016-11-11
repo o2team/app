@@ -20,7 +20,7 @@
 {% block main %}
 <div class="tarot">
   <div class="tarot-hd">
-    「执念卡」- 色即是空
+    「执念卡」- 虚空之眼
   </div>
   <div class="tarot-bd">
     <div class="swiper-container mm-swiper" id="swiper">
