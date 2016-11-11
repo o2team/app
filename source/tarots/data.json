@@ -3,12 +3,14 @@
     "items": [
         {
             "title": "「京东双11收尾卡」",
+            "auth": false,
             "cover": "http://m.360buyimg.com/mobilecms/jfs/t3430/38/1417993230/81750/17db9e6c/5824459bNe9eddbad.jpg!q70.jpg",
             "desc": "双11还没买够手脚健全的话就来这里领券吧！",
             "url": "http://coupon.m.jd.com/center/getCouponCenter.action"
         },
         {
             "title": "「宅男执念卡」",
+            "auth": true,
             "cover": "https://misc.aotu.io/mamboer/2016/o2-wants-u-cover.jpg",
             "desc": "要相信坚持5秒就是一个成功的男人！",
             "url": "https://app.aotu.io/tarots/mm/"
