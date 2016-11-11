@@ -26,7 +26,7 @@
     <div class="swiper-container mm-swiper" id="swiper">
       <div class="swiper-wrapper mm-swiper-wrapper">
         {% for item in _.sortBy(site.data[page.data], 'name') %}
-              {{ partial('_item', {item: item}) }}
+              {{ partial('_item', {item: item, idx: loop.index}) }}
         {% endfor %}
       </div>
     </div>
