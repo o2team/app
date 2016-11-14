@@ -3,6 +3,7 @@
     "items": [
         {
             "title": "「京东双11收尾祭」",
+            "auth": false,
             "cover": "http://m.360buyimg.com/mobilecms/jfs/t3430/38/1417993230/81750/17db9e6c/5824459bNe9eddbad.jpg!q70.jpg",
             "desc": "双11还没买够手脚健全的话就来这里领券吧！",
             "url": "http://coupon.m.jd.com/center/getCouponCenter.action"
@@ -10,12 +11,14 @@
         {
             "title": "「色-即是空即是色」",
             "cover": "https://misc.aotu.io/mamboer/2016/o2-wants-u-cover.jpg",
+            "auth": true,
             "desc": "要相信坚持5秒就是一个成功的男人！",
             "url": "https://app.aotu.io/tarots/mm/?o2webview=lite"
         },
         {
             "title": "「漫漫编程路上必读的7本书」",
             "cover": "https://misc.aotu.io/o2/img/books/books-cover.jpg",
+            "auth": true,
             "desc": "凹凸实验室推荐的经典的对提升编程思想、软件工程理论大有裨益的书籍",
             "url": "https://aotu.io/notes/2016/11/14/booklist-for-every-programmer/index.html?o2layout=nohd&o2src=liteo2-tarot&o2webview=lite"
         }
