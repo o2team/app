@@ -11,9 +11,9 @@
         {
             "title": "「宅男执念卡」",
             "auth": true,
-            "cover": "https://misc.aotu.io/mamboer/2016/o2-wants-u-cover.jpg?o2webview=lite",
+            "cover": "https://misc.aotu.io/mamboer/2016/o2-wants-u-cover.jpg",
             "desc": "要相信坚持5秒就是一个成功的男人！",
-            "url": "https://app.aotu.io/tarots/mm/"
+            "url": "https://app.aotu.io/tarots/mm?o2webview=lite"
         }
     ]
 }
