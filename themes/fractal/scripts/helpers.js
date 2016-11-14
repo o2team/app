@@ -147,3 +147,15 @@ hexo.extend.helper.register('num_toArray', function(num) {
     }
     return ret;
 });
+
+hexo.extend.helper.register('css1', function(path) {
+    var ret = this.css(path);
+    ret = ret.replace('.css', '.css?t=' + new Date().getTime());
+    return ret;
+});
+
+hexo.extend.helper.register('js1', function(path) {
+    var ret = this.js(path);
+    ret = ret.replace('.js', '.js?t=' + new Date().getTime());
+    return ret;
+});

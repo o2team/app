@@ -1,5 +1,6 @@
 layout: tarots/mm
-title: 「执念卡」- 轻氧APP
+title: 「色即是空」- 轻氧APP
 data: mms
 comments: false
+nocache: true
 ---

@@ -39,7 +39,11 @@
 <meta name="msapplication-TileImage" content="{{ url_for('img/mstile-144x144.png') }}">
 
 <!-- CSS -->
+{% if page.nocache %}
+{{ css1('css/style') }}
+{% else %}
 {{ css('css/style') }}
+{% endif %}
 
 <noscript>
     {{ css('css/nojs') }}
