@@ -20,7 +20,7 @@
 {% block main %}
 <div class="tarot">
   <div class="tarot-hd">
-    「执念卡」- 骚年打网球不
+    骚年一起打网球不
   </div>
   <div class="tarot-bd">
     <div class="swiper-container mm-swiper" id="swiper">
