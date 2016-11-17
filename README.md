@@ -2,7 +2,8 @@
 
 ![下载体验](https://misc.aotu.io/o2/img/app/qrcode.png)
 
-> IOS源码计划于2017年初开放，届时应该会放在ios分支。
+
+> <span style="color:red;font-size:16px">IOS源码计划于2017年初开放，届时应该会放在ios分支。</span>
 
 [轻氧](https:/app.aotu.io) 是 [凹凸实验室](https://aotu.io) 一不留神上架了的一款互联网技术资讯APP，它囊括了众多知名互联网公司、团队及网站的资讯，让你能一口气把业界最优质的文章读完，只要你愿意。
 
