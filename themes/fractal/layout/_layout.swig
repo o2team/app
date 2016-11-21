@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>{% block title %}{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}「{{ config.subtitle }}」{% endblock %}</title>
+    {% block prehead %} {% endblock %}
     {{partial('_partial/common/head')}}
     {% block head %} {% endblock %}
 </head>

@@ -159,3 +159,22 @@ hexo.extend.helper.register('js1', function(path) {
     ret = ret.replace('.js', '.js?t=' + new Date().getTime());
     return ret;
 });
+
+/**
+ * inline css files.
+ * @dependence hexo-filter-asset-inline
+ */
+hexo.extend.helper.register('cssInline', function(path) {
+    var ret = this.css(path);
+    ret = ret.replace('.css', '.css?__inline=true');
+    return ret;
+});
+/**
+ * inline js files.
+ * @dependence hexo-filter-asset-inline
+ */
+hexo.extend.helper.register('jsInline', function(path) {
+    var ret = this.js(path);
+    ret = ret.replace('.js', '.js?__inline=true');
+    return ret;
+});

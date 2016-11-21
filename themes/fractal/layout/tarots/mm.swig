@@ -11,10 +11,13 @@
   {% endif %}
 {% endblock %}
 
-{% block head %}
+{% block prehead %}
 <link rel="stylesheet" type="text/css" href="{{url_for('assets/swiper/css/swiper.min.css')}}"/>
-{{ css('css/tarot') }}
-<script src="{{url_for('assets/swiper/js/swiper.min.js')}}"></script>
+{% endblock %}
+
+{% block head %}
+{{ cssInline('css/tarot') }}
+<script src="{{url_for('assets/swiper/js/swiper.min.js?__inline=true')}}"></script>
 {% endblock %}
 
 {% block main %}

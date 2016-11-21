@@ -39,10 +39,10 @@
 <meta name="msapplication-TileImage" content="{{ url_for('img/mstile-144x144.png') }}">
 
 <!-- CSS -->
-{% if page.nocache %}
-{{ css1('css/style') }}
+{% if page.cssInline %}
+{{ cssInline(page.css|default('css/style')) }}
 {% else %}
-{{ css('css/style') }}
+{{ css1(page.css|default('css/style')) }}
 {% endif %}
 
 <noscript>
