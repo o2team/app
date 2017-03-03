@@ -24,7 +24,7 @@
             <h2 class="modal-title">Android 版本下载途径</h2>
             <ul class="download-list">
                 <li class="btn-wrap"><a href="{{config.yingyongbaoLink}}" class="btn btn-whiteline" style="background-color: #3F51B5;">腾讯应用宝</a>
-                <li class="btn-wrap"><a class="btn btn-whiteline" style="background-color: #4CAF50;opacity: 0.3">豌豆荚（暂未上架，敬请期待...）</a>
+                <li class="btn-wrap"><a class="btn btn-whiteline" style="background-color: #4CAF50; opacity: 0.3; cursor: initial;">豌豆荚（暂未上架，敬请期待...）</a>
             </ul>
         </div>
     </div>
