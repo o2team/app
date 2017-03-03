@@ -206,3 +206,43 @@
         display: block
     .alert-android
         display: block
+
+.modal-mask
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+
+.modal-content
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+.modal-title
+    color: #d0e4f8;
+
+.download-list
+    list-style: none;
+    padding: 0;
+
+    .btn-wrap
+        padding: 1em 0 0
+        width: 20em;
+        margin: auto;
+        .btn
+            width: 100%
+
+.fade
+    opacity: 0
+    visibility: hidden
+    &.in
+        opacity: 1
+        visibility: visible
+        transition: opacity 0.35s
+    &.out
+        opacity: 0
+        visibility: hidden
+        transition: visibility 0s 0.35s, opacity 0.35s
