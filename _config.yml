@@ -8,9 +8,12 @@ subtitle: 轻氧App
 subtitle_desc: 凹凸实验室（<a href='//aotu.io' class='banner-link' target="_blank">aotu.io</a>）出品
 fulltitle: 聚焦知名互联网公司、团队或站点的专业资讯APP
 slogan: 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量
+
+# appLink: 
 appLink: https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app
 yingyongbaoLink: http://a.app.qq.com/o/simple.jsp?pkgname=com.aurorarn
-# appLink: 
+wandoujiaLink: http://www.wandoujia.com/apps/com.aurorarn
+
 keywords: 轻氧, 轻氧APP, 凹凸实验室, Aotu, 前端开发, 全栈开发, IOS开发, Android开发, UED资讯, 视觉设计, 产品经理, 交互设计, 用研, 用户研究, 全栈开发
 description: 凹凸实验室(aotu.io)出品的一款聚焦知名互联网公司、团队或站点的互联网资讯APP, 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量。在『轻氧』里你可以随时把握国内外知名互联网公司的交互、设计、前端以及开发等资讯动态信息。
 author: 凹凸实验室
