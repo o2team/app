@@ -1,6 +1,6 @@
 ---
 "extends":
-  - "defaults"
+  - "eslint:recommended"
 "globals":
   "jQuery": true
   "App": true

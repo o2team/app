@@ -4,7 +4,7 @@
 
 # Site
 title: Aotu.io
-subtitle: 轻氧App
+subtitle: 凹凸实验室
 subtitle_desc: 凹凸实验室（<a href='//aotu.io' class='banner-link' target="_blank">aotu.io</a>）出品
 fulltitle: 聚焦知名互联网公司、团队或站点的专业资讯APP
 slogan: 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量
@@ -136,7 +136,7 @@ disqus_shortname:
 baidu_analytics: e850b980d029480b092fdd7503c3f8de
 baidu_push: true
 google_analytics:
-cnzz_analytics: 1258539944
+at_analytics: app.aotu.io
 
 # Social
 twitter: o2circle
