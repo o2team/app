@@ -2,6 +2,11 @@
 
 
 .qingy
+  .banner
+    background-image: linear-gradient(-225deg, #51B6F5 0%, #6C63EC 48%, #8D33FB 100%);
+    background-position: top left, center center
+    background-attachment: fixed, fixed
+    background-size: auto, cover
   .phones
     font-size: 0
     .phones-left, .phones-right
@@ -28,12 +33,23 @@
             width: 85px
 
 .meetings
+  .banner
+    &::before
+      content: '\20'
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      opacity: .4
+      background: url(https://img.aotu.io/app/meetings/bg.jpg) 50% 50% no-repeat
+      background-size: cover
   .phones .inner
     transform-style: preserve-3d;
     perspective:  800px;
     perspective-origin: 50% 90%;
     font-size: 0
-    margin: 0 -86px
+    margin: 0 -86px -20px
     .phones-left, .phones-right
       transform-style: preserve-3d;
       display: inline-block;
@@ -92,11 +108,7 @@
     background-color: $banner-bg
     color: $banner-color
     padding: 4.5em 0 2.5em 0
-    // background-image: linear-gradient(-180deg, #3B3C40 0%, #434D63 100%)
-    background-image: linear-gradient(-225deg, #51B6F5 0%, #6C63EC 48%, #8D33FB 100%);
-    background-position: top left, center center
-    background-attachment: fixed, fixed
-    background-size: auto, cover
+
     height: 100vh
     min-height: 35em
     vhc-wrap()
