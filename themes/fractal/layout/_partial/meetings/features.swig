@@ -30,7 +30,7 @@
     </div>
 </section>
 
-<section class="sec sec-style1 features">
+<!-- <section class="sec sec-style1 features">
     <div class="sec-inner">
         <header class="sec-hd">
             <h2 class="sec-tit">{{site.data.features.brands.items.length}}{{site.data.features.brands.title}}</h2>
@@ -69,6 +69,8 @@
         </div>
     </div>
 </section>
+-->
+
 
 <section class="sec copyrights" id="copyright">
     <div class="sec-inner">

@@ -6,7 +6,7 @@
 
     {% include '_partial/meetings/banner.swig' %}
     {% include '_partial/meetings/features.swig' %}
-    
+
 {% endblock %}
 
 {% block footer %}
@@ -14,5 +14,5 @@
 {% endblock %}
 
 {% block pagejs %}
-{{ js('js/index') }}
+{{ js('js/qingy') }}
 {% endblock%}
