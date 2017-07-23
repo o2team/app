@@ -1,6 +1,6 @@
 {% extends '_layout.swig' %}
 
-{% block page_class %}page-full page-index{% endblock %}
+{% block page_class %}page-full page-index meetings{% endblock %}
 
 {% block main %}
 

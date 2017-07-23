@@ -1,3 +1,3 @@
-title: 轻氧App
+title: 轻氧资讯
 layout: qingy
 ---

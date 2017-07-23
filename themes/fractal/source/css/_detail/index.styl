@@ -1,0 +1,301 @@
+@import "features"
+
+
+.qingy
+  .phones
+    font-size: 0
+    .phones-left, .phones-right
+      display: inline-block
+      img
+        width: 100%
+    .phones-left
+        width: 167px
+        vertical-align: bottom
+        margin-right: 8px
+        +desktop-down()
+            width: 132px
+        +tablet-down()
+            width: 110px
+        +mq-max(360px)
+            width: 70px
+    .phones-right
+        width: 197px
+        +desktop-down()
+            width: 160px
+        +tablet-down()
+            width: 125px
+        +mq-max(360px)
+            width: 85px
+
+.meetings
+  .phones .inner
+    transform-style: preserve-3d;
+    perspective:  800px;
+    perspective-origin: 50% 90%;
+    font-size: 0
+    margin: 0 -86px
+    .phones-left, .phones-right
+      transform-style: preserve-3d;
+      display: inline-block;
+      vertical-align: bottom;
+    .phones-left
+      img
+        width: 253px;
+        transform: rotateY(-40deg);
+        transform-origin: 100% 50% 0;
+        margin-right: 5px;
+        vertical-align: bottom;
+        +desktop-down()
+            width: 218px
+        +tablet-down()
+            width: 176px
+        +mq-max(360px)
+            width: 136px
+    .phones-right
+      img
+        width: 293px;
+        transform: rotateY(36deg);
+        transform-origin: 0% 50% 0;
+        vertical-align: bottom;
+        +desktop-down()
+            width: 258px
+        +tablet-down()
+            width: 216px
+        +mq-max(360px)
+            width: 176px
+
+.loaded
+  .phones-left
+    animation: slide_from_top 2s
+  .phones-right
+    animation: slide_from_bottom 2s
+
+@keyframes slide_from_top
+    0%
+        transform: translateY(200px)
+    100%
+        transform: translateY(0px)
+@keyframes slide_from_bottom
+    0%
+        transform: translateY(-200px)
+    100%
+        transform: translateY(0px)
+
+.wx_cover
+    display: none;
+.banner
+    overflow: hidden
+    .actions .btn:focus
+        color: inherit
+    .banner-desc .banner-link:visited
+        color: #fff
+    background-color: $banner-bg
+    color: $banner-color
+    padding: 4.5em 0 2.5em 0
+    // background-image: linear-gradient(-180deg, #3B3C40 0%, #434D63 100%)
+    background-image: linear-gradient(-225deg, #51B6F5 0%, #6C63EC 48%, #8D33FB 100%);
+    background-position: top left, center center
+    background-attachment: fixed, fixed
+    background-size: auto, cover
+    height: 100vh
+    min-height: 35em
+    vhc-wrap()
+    &-link
+        border-bottom-color: rgba(255, 255, 255, 0.5)
+        color: #ffffff
+        &:hover
+            color: #fefefe
+    p
+        font-size: 1.5em
+        line-height: 1.35em
+        +desktop-down()
+            font-size: 1.2em
+            line-height: normal
+        +tablet-down()
+            font-size: 1em
+    h1
+        font-size: 3.25em
+        margin-bottom: 0.5em
+        +desktop-down()
+            font-size: 2em
+            margin-top: 0
+        +tablet-down()
+            font-size: 1.8em
+    &-desc
+        margin-bottom: 1.5em
+    .content
+        position: relative
+        z-index: 2
+        opacity: 0
+        transform: translateX(-20px)
+        transition: opacity 0.5s ease, transform 1s ease
+        .banner-desc
+            font-size: 85%
+        .loaded &
+            transform: translateX(0)
+            opacity: 1
+        text-align: right
+        padding: 0 4em 0 0
+        > :last-child
+            margin-bottom: 0
+        +mq-max(1060px)
+            padding-right: 2em
+        +desktop-down()
+            padding: 0 0 2em 0
+            text-align: center
+    .image
+        transition: opacity 1s ease, transform 1s ease
+        transform: translateY(20px)
+        opacity: 0
+        .loaded &
+            transform: translateY(0)
+            opacity: 1
+        img
+            opacity: 0
+            transition: opacity 0.75s ease
+            transition-delay: 0.75s
+            .loaded &
+                opacity: 1
+    .phones
+        +desktop-down()
+            margin: 0 0 40px 0
+        +tablet-down()
+            margin: 0 0 30px 0
+
+    .actions
+        margin-top: 1.5em
+    +desktop-large-down()
+        font-size: 14px
+    +desktop-xlarge-up()
+        font-size: 18px
+    +desktop-down()
+        flex-direction: column-reverse
+        padding: 2em 1em 0.1em 1em
+    +mobile()
+        height: auto
+        min-height: 100vh
+
+.phone
+    margin: 0 4em 3em 0
+    width: 13em
+    +mq-max(1060px)
+        margin-right: 2em
+    +desktop-down()
+        margin-right: 0
+    +mobile()
+        font-size: 0.8em
+        max-width: 60vw
+    img
+        display: block
+        position: relative
+        width: 100%
+    .inner, &:before, &:after
+        display: block
+        border: solid 2px rgba(255, 255, 255, 0.25)
+    .inner
+        position: relative
+        &:before, &:after
+            content: ''
+            position: absolute
+            left: 50%
+        &:before
+            top: -1.375em
+            margin-left: -1em
+            width: 2em
+            height: 0.25em
+            border-radius: 0.5em
+            background: rgba(255, 255, 255, 0.25)
+        &:after
+            bottom: -2.75em
+            margin-left: -1em
+            width: 2em
+            height: 2em
+            border-radius: 100%
+            border: solid 2px rgba(255, 255, 255, 0.25)
+    &:before, &:after
+        content: ''
+    &:before
+        height: 2.5em
+        border-radius: 1em 1em 0 0
+        border-bottom: 0
+    &:after
+        height: 3.5em
+        border-radius: 0 0 1em 1em
+        border-top: 0
+
+.qrcode-ios
+    top: 48px;
+    margin: 25px 0 0 auto
+    position: relative
+    // width: 180px
+    // height: 180px
+    background: #fff;
+    width: 130px;
+    height: 130px;
+
+    // border-radius: 100%
+    overflow: hidden
+    text-align: center
+    // border: 1px solid rgba(255,255,255,0.25)
+    transition-delay: 1.5s !important
+    img
+        // width: 120px
+        // height: 120px
+        width: 100%
+        height: 100%
+        vertical-align: top
+        // margin-top: 40px
+    +desktop-down()
+        display: none
+
+.alert-android
+    display: none;
+
+// .android
+//     .btn-wrap-download
+//         display: none
+//     .btn-wrap-more
+//         display: block
+//     .btn-more
+//         display: block
+//     .alert-android
+//         display: block
+
+.modal-mask
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+
+.modal-content
+    text-align: center;
+    position: relative;
+    margin-top: 50%;
+
+.modal-title
+    color: #d0e4f8;
+
+.download-list
+    list-style: none;
+    padding: 0;
+
+    .btn-wrap
+        padding: 1em 0 0
+        width: 20em;
+        margin: auto;
+        .btn
+            width: 100%
+
+.fade
+    opacity: 0
+    visibility: hidden
+    &.in
+        opacity: 1
+        visibility: visible
+        transition: opacity 0.35s
+    &.out
+        opacity: 0
+        visibility: hidden
+        transition: visibility 0s 0.35s, opacity 0.35s
