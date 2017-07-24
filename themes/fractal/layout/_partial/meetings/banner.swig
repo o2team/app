@@ -16,10 +16,10 @@
     <div class="image phones wait-for-img">
         <div class="inner">
             <div class="phones-left">
-              <img src="https://img.aotu.io/app/meetings/banner_02.png?imageView2/0/w/640/format/webp" alt="{{config.subtitle}}"/>
+              <img src="https://img.aotu.io/app/meetings/banner_02.png?imageView2/0/w/506" alt="{{config.subtitle}}"/>
             </div>
             <div class="phones-right">
-              <img src="https://img.aotu.io/app/meetings/banner_01.png?imageView2/0/w/640/format/webp" alt="{{config.subtitle}}"/>
+              <img src="https://img.aotu.io/app/meetings/banner_01.png?imageView2/0/w/586" alt="{{config.subtitle}}"/>
             </div>
 
         </div>

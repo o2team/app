@@ -27,8 +27,8 @@
                 <h1 class="app-title">凹凸会议</h1>
                 <p class="app-slogan">"您随身携带的会议管家"</p>
                 <div class="intro--banner-inner">
-                  <img src="http://img.aotu.io/app/meetings/banner_02.jpg" alt="Welcome">
-                  <img src="http://img.aotu.io/app/meetings/banner_01.jpg" alt="Welcome">
+                  <img src="https://img.aotu.io/app/meetings/banner_02.png?imageView2/0/w/480" alt="Welcome">
+                  <img src="https://img.aotu.io/app/meetings/banner_01.png?imageView2/0/w/560" alt="Welcome">
                 </div>
                 <div class="intro--banner-tag"></div>
               </div>

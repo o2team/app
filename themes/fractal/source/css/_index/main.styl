@@ -1893,44 +1893,49 @@ h1, h2 {
   fill: #ffffff;
   position: absolute; width: 30px; left: 50%; top: 50%; margin: -15px 0 0 -15px;
 }
+
+
+
+
 .about--options>a {
-  border-color: #0f73ee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.work-logo {
-  height: 32px;
-}
-.outer-nav>li {
-  font-weight: 100;
-}
+  border-color: #0f73ee
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+.work-logo
+  height: 32px
+
+.outer-nav>li
+  font-weight: 100
 
 
-.intro--banner-inner {
-  transform-style: preserve-3d;
-  perspective:  1200px;
-  perspective-origin: 50% 90%;
-  text-align: center;
-  font-size: 0;
-
-  position: absolute;
+.intro--banner-inner
+  transform-style: preserve-3d
+  perspective:  1200px
+  perspective-origin: 50% 90%
+  text-align: center
+  font-size: 0
+  position: absolute
   right: -30px;
-  bottom: 21px;
-  white-space: nowrap;
-}
-.intro--banner-inner img:first-child {
-  width: 240px;
-  transform: rotateY(-45deg);
-  transform-origin: 100% 50% 0;
-  margin-right: 5px;
-  vertical-align: bottom;
-}
+  bottom: 21px
+  white-space: nowrap
 
-.intro--banner-inner img:last-child {
-  width: 280px;
-  transform: rotateY(40deg);
-  transform-origin: 0% 50% 0;
-  vertical-align: bottom;
-}
+
+.intro--banner-inner img:first-child
+  width: 240px
+  transform: rotateY(-45deg)
+  transform-origin: 100% 50% 0
+  margin-right: 5px
+  vertical-align: bottom
+  @media (max-width: 767px)
+    width: 180px
+
+.intro--banner-inner img:last-child
+  width: 280px
+  transform: rotateY(40deg)
+  transform-origin: 0% 50% 0
+  vertical-align: bottom
+  @media (max-width: 767px)
+    width: 220px
