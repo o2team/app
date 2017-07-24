@@ -9,10 +9,6 @@
     // 初始化状态
     $introOpts.eq(introOptsActiveIndex).addClass('is-active')
     $intro.attr('data-active-index', introOptsActiveIndex)
-    $("#loader").fadeOut('slow', function() {
-        $(this).remove();
-        // App.$win.trigger('loaderne');
-    });
 
     $('.intro--options').on('click', 'a', function(e) {
       changeIndexHandle($(this).index())
