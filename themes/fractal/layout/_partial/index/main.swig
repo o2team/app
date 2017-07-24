@@ -4,10 +4,10 @@
     <div id="viewport" class="l-viewport">
       <div class="l-wrapper">
         <header class="header">
-          <a class="header--logo" href="#0">
+          <div class="header--logo">
             <img src="https://img.aotu.io/app/logo-inverse.png" alt="Global">
             <p>O2 应用工坊</p>
-          </a>
+          </div>
           <!--<button class="header--cta cta">Hire Us</button>-->
           <div class="header--nav-toggle">
             <span></span>
@@ -33,18 +33,18 @@
                 <div class="intro--banner-tag"></div>
               </div>
               <div class="intro--options">
-                <a href="#0">
+                <div class="intro--options-item">
                   <h3>会议邀约</h3>
                   <p>一键创建会议，并通过分享至微信邀约与会人，简单而高效。</p>
-                </a>
-                <a href="#0">
+                </div>
+                <div class="intro--options-item">
                   <h3>会议纪要</h3>
                   <p>无纸化纪要办公，抛弃笔头和邮件，随时随地轻松回顾会议的过程和结果。</p>
-                </a>
-                <a href="#0">
+                </div>
+                <div class="intro--options-item">
                   <h3>小程序版</h3>
                   <p>小程序版本已同步上线，关注「凹凸实验室」公众号，可免费体验会议提醒功能。</p>
-                </a>
+                </div>
               </div>
             </div>
           </li>

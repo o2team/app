@@ -738,11 +738,7 @@ body {
     width: 30px;
     height: 4px;
     background-color:#0f73ee;
-    -webkit-transition: transform .5s;
-    -moz-transition: transform .5s;
-    -ms-transition: transform .5s;
-    -o-transition: transform .5s;
-    transition: transform .5s
+    transition: transform .5s;
 }
 
 .intro--banner h1 {
@@ -803,23 +799,23 @@ body {
     list-style: none
 }
 
-.intro--options>a {
+.intro--options .intro--options-item {
     max-width: 250px;
     text-decoration: none;
     color: #666;
-    -webkit-transition: color .2s ease-in-out;
+    cursor: pointer;
     transition: color .2s ease-in-out
 }
 
-.intro[data-active-index="0"] .intro--options>a:nth-child(1) {
+.intro[data-active-index="0"] .intro--options>.intro--options-item:nth-child(1) {
   color: #fff
 }
 
-.intro[data-active-index="1"] .intro--options>a:nth-child(2) {
+.intro[data-active-index="1"] .intro--options>.intro--options-item:nth-child(2) {
   color: #fff
 }
 
-.intro[data-active-index="2"] .intro--options>a:nth-child(3) {
+.intro[data-active-index="2"] .intro--options>.intro--options-item:nth-child(3) {
   color: #fff
 }
 
@@ -1897,7 +1893,7 @@ h1, h2 {
 
 
 
-.about--options>a
+.about--options
   border-color: #0f73ee
   display: flex
   align-items: center

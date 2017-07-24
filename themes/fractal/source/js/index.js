@@ -1,7 +1,7 @@
 (function($) {
   $(function () {
     var $intro = $('.intro')
-    var $introOpts = $('.intro--options a')
+    var $introOpts = $('.intro--options-item')
     var $introBannerTag = $('.intro--banner-tag')
     var introDuration = 5000
     var introOptsActiveIndex = 0
@@ -10,7 +10,7 @@
     $introOpts.eq(introOptsActiveIndex).addClass('is-active')
     $intro.attr('data-active-index', introOptsActiveIndex)
 
-    $('.intro--options').on('click', 'a', function(e) {
+    $('.intro--options').on('click', '.intro--options-item', function(e) {
       changeIndexHandle($(this).index())
       runIntro()
     })
@@ -35,11 +35,11 @@
       $intro.attr('data-active-index', introOptsActiveIndex)
       var left = $introOpts.eq(introOptsActiveIndex).position().left
       $introBannerTag.css({
-        '-webkit-transform': 'translateX(' + left + 'px)',
-        '-moz-transform': 'translateX(' + left + 'px)',
-        '-ms-transform': 'translateX(' + left + 'px)',
-        '-o-transform': 'translateX(' + left + 'px)',
-        'transform': 'translateX(' + left + 'px)'
+        '-webkit-transform': 'translate3d(' + left + 'px, 0, 0)',
+        '-moz-transform': 'translateX(' + left + 'px, 0, 0)',
+        '-ms-transform': 'translateX(' + left + 'px, 0, 0)',
+        '-o-transform': 'translateX(' + left + 'px, 0, 0)',
+        'transform': 'translateX(' + left + 'px, 0, 0)'
       })
     }
 
