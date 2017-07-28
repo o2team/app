@@ -1,4 +1,4 @@
-{% extends '_index_layout.swig' %}
+{% extends '_layout_index.swig' %}
 
 {% block page_class %}page-full page-index{% endblock %}
 
@@ -10,7 +10,4 @@
 {% block footer %}
     {% parent %}
 {% endblock %}
-{% block pagejs %}
-  {{ js('js/index') }}
-  {{ js('js/functions-min') }}
-{% endblock%}
+

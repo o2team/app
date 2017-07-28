@@ -15,12 +15,8 @@
 
     {% block header %}{% endblock %}
 
-	  {% block main %}{% endblock %}
+    {% block main %}{% endblock %}
 
-  {#  {% block footer %}
-        {% include '_partial/common/footer.swig' %}
-    {% endblock %}
-  #}
     {% block footer %}
         {% include '_partial/index/footer.swig' %}
     {% endblock %}

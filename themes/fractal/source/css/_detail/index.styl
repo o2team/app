@@ -1,7 +1,7 @@
 @import "features"
 
 
-.qingy
+.page-qingy
   .banner
     background-image: linear-gradient(-225deg, #51B6F5 0%, #6C63EC 48%, #8D33FB 100%);
     background-position: top left, center center
@@ -32,12 +32,13 @@
         +mq-max(360px)
             width: 85px
 
-.meetings
+.page-meetings
   .banner
     position: relative
     &::before
       content: '\20'
       position: absolute
+      z-index: 1;
       left: 0
       top: 0
       right: 0
@@ -45,6 +46,15 @@
       opacity: .4
       background: url(https://img.aotu.io/app/meetings/bg.jpg) 50% 50% no-repeat
       background-size: cover
+    &::after
+      content: '\20'
+      position: absolute
+      z-index: 2;
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background: rgba(0, 0, 0, .4)
   .phones .inner
     transform-style: preserve-3d;
     perspective:  800px;
@@ -129,6 +139,7 @@
     h1
         font-size: 3.25em
         margin-bottom: 0.5em
+        font-weight: 200
         +desktop-down()
             font-size: 2em
             margin-top: 0
@@ -138,7 +149,7 @@
         margin-bottom: 1.5em
     .content
         position: relative
-        z-index: 2
+        z-index: 3
         opacity: 0
         transform: translateX(-20px)
         transition: opacity 0.5s ease, transform 1s ease
@@ -157,6 +168,8 @@
             padding: 0 0 2em 0
             text-align: center
     .image
+        position: relative
+        z-index: 3
         transition: opacity 1s ease, transform 1s ease
         transform: translateY(20px)
         opacity: 0

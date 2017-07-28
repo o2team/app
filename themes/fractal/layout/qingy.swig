@@ -1,6 +1,6 @@
 {% extends '_layout.swig' %}
 
-{% block page_class %}page-full page-index qingy{% endblock %}
+{% block page_class %}page-full page-qingy{% endblock %}
 
 {% block main %}
 

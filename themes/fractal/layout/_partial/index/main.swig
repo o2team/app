@@ -8,7 +8,6 @@
             <img src="https://img.aotu.io/app/logo-inverse.png" alt="Global">
             <p>O2 应用工坊</p>
           </div>
-          <!--<button class="header--cta cta">Hire Us</button>-->
           <div class="header--nav-toggle">
             <span></span>
           </div>
@@ -26,6 +25,18 @@
               <div class="intro--banner">
                 <h1 class="app-title">凹凸会议</h1>
                 <p class="app-slogan">"您随身携带的会议管家"</p>
+                <div class="app-qrcode">
+                  <div class="cube-wrap">
+                    <figure class="cube" id="cube">
+                      <div class="cube-panel is--front"><a class="cube-panel-inner" href="/foo/meetings/jump.html" title="凹凸会议APP"><img src="https://img.aotu.io/app/meetings/qr-mettings.png" /></a></div>
+                      <div class="cube-panel is--left"><a class="cube-panel-inner" href="/foo/meetings/jump.html" title="凹凸会议APP"><img src="https://img.aotu.io/app/meetings/qrcode-lite.jpg" /></a></div>
+                      <div class="cube-panel is--right">凹凸会议</div>
+                      <div class="cube-panel is--top">AotuMeetings</div>
+                      <div class="cube-panel is--bottom">凹凸实验室</div>
+                      <div class="cube-panel is--back">Aotu.io</div>
+                    </figure>
+                  </div>
+                </div>
                 <div class="intro--banner-inner">
                   <img src="https://img.aotu.io/app/meetings/banner_02.png?imageView2/0/w/480" alt="Welcome">
                   <img src="https://img.aotu.io/app/meetings/banner_01.png?imageView2/0/w/560" alt="Welcome">
@@ -53,16 +64,16 @@
               <div class="work--lockup">
                 <ul class="slider">
                   <li class="slider--item slider--item-left">
-                    <a href="https://app.aotu.io/qingy/" class="app-qy" target="_blank">
+                    <a href="/qingy/" class="app-qy" target="_blank">
                       <div class="slider--item-image">
-                        <img src="https://img.aotu.io/app/liteo2.png" alt="轻氧APP">
+                        <img src="https://img.aotu.io/app/liteo2.png" alt="轻氧资讯APP">
                       </div>
-                      <p class="slider--item-title">轻氧APP</p>
+                      <p class="slider--item-title">轻氧资讯</p>
                       <p class="slider--item-description">聚焦知名互联网公司、团队或站点的专业资讯APP</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
-                    <a href="https://app.aotu.io/meetings/" class="app-meetings" target="_blank">
+                    <a href="/meetings/" class="app-meetings" target="_blank">
                       <div class="slider--item-image">
                         <img src="https://img.aotu.io/app/meetings/logo-white.png" alt="Metiew and Smith">
                       </div>
@@ -71,7 +82,7 @@
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
-                    <a href="https://app.aotu.io/meetings/" class="app-litemeetings" target="_blank">
+                    <a href="/meetings/" class="app-litemeetings" target="_blank">
                       <div class="slider--item-image">
                         <img src="https://img.aotu.io/app/meetings/logo-white.png" alt="Metiew and Smith">
                         <svg class="svg svg-litewx" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M606.811539 89.321891c-164.582012 81.194279-158.250279 262.524509-130.090278 429.522618 34.008436 201.320339 7.266521 303.571782-91.101479 352.098909-102.188218 50.414158-226.584436 8.474764-277.154909-94.033066-50.569309-102.504339-8.472048-226.582885 94.035006-277.15297 17.507297-8.638061 24.766061-30.029964 16.129163-47.5392-8.638061-17.508073-30.032679-24.768388-47.539587-16.130327-137.207079 67.687952-194.137212 234.708558-126.291782 372.231757 67.846594 137.525915 234.708945 194.141479 372.233309 126.295661 164.264339-81.039903 157.9264-261.573818 129.922327-427.462594-34.162812-202.430061-7.579539-305.002279 91.423806-353.843588 102.189382-50.414545 226.583661-8.472436 277.156073 94.035006 50.570085 102.507055 8.472048 226.583661-94.033455 277.153358-17.510012 8.638061-24.766448 30.031127-16.129939 47.5392 8.638448 17.508848 30.031515 24.768776 47.539588 16.130715 137.205139-67.690279 194.1376-234.711273 126.293333-372.234473-67.846982-137.5232-234.864097-194.457988-372.391176-126.611006z" p-id="2349" fill="#ffffff"></path></svg>

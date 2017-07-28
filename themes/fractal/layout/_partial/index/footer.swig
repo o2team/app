@@ -1,7 +1,7 @@
 <div class="loader" id="loader"><span class="loader-inner"></span></div>
 
 <!-- Scripts -->
-<!-- build:js /js/bundle/core.js -->
+<!-- build:js /js/bundle/index.js -->
 {{ js('js/libs/modernizr') }}
 {{ js('js/libs/hammer') }}
 {{ js('js/libs/jquery') }}
@@ -15,4 +15,5 @@
 {{ js('js/mods/browser') }}
 {{ js('js/mods/common') }}
 {{ js('js/mods/console') }}
+{{ js('js/index') }}
 <!-- endbuild -->

@@ -1,6 +1,6 @@
 {% extends '_layout.swig' %}
 
-{% block page_class %}page-full page-index meetings{% endblock %}
+{% block page_class %}page-full page-meetings{% endblock %}
 
 {% block main %}
 
@@ -14,5 +14,5 @@
 {% endblock %}
 
 {% block pagejs %}
-{{ js('js/qingy') }}
+
 {% endblock%}
