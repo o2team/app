@@ -16,6 +16,6 @@
 {% endif %}
 
 {% include 'baidu_analytics.swig' %}
-{% include 'cnzz_analytics.swig' %}
+{% include 'at_analytics.swig' %}
 
 

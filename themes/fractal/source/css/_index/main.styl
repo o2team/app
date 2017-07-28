@@ -1,0 +1,778 @@
+@import "vars"
+@import "../_libs/bootstrap/normalize"
+@import "../_base/mixins"
+
+*
+  box-sizing: border-box
+  &:before, &:after
+    box-sizing: border-box
+
+body
+  background-color: #0c0c0c
+  font-size: 14px
+  line-height: 1.6
+  font-family: "PingFang SC", "Hiragino Sans GB","Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif
+  color: #fff
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+h1, h2
+  font-weight: 200
+
+.l-viewport
+  position: relative
+  width: 100%
+  height: 100vh
+  box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85)
+  overflow: hidden
+
+.l-wrapper
+  position: relative
+  width: 1440px
+  max-width: 90%
+  height: 100%
+  margin: 0 auto
+
+.l-side-nav
+  position: absolute
+  left: 0
+  display: flex
+  height: 100%
+  align-items: center
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    width: 2px
+    height: 70%
+    max-height: 750px
+    background-color: #555
+    opacity: .35
+    z-index: 10
+  +desktop-large-down()
+    display: none
+
+.l-main-content
+  position: relative
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  list-style: none
+
+.l-section
+  position: absolute
+  width: 100%
+  height: 100%
+
+.section
+  opacity: 0
+  visibility: hidden
+  transition: opacity .4s ease-in-out, visibility 0s .4s
+  &--is-active
+    opacity: 1
+    visibility: visible
+    z-index: 1
+    transition: opacity .4s ease-in-out .4s
+  &--next
+    transform: translateY(-45px)
+    transition: transform .4s ease-in-out
+  &--prev
+    transform: translateY(45px)
+    transition: transform .4s ease-in-out
+
+.header
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  width: 100%
+  height: 70px
+  align-items: center
+  justify-content: space-between
+  z-index: 10
+  &--logo
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: #fff
+    img
+      width: 30px
+    p
+      margin: 0 0 0 10px
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+  &--nav-toggle
+    display: flex
+    width: 50px
+    height: 50px
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    span, &:before, &:after
+      content: ""
+      position: relative
+      width: 16px
+      height: 2px
+      background-color: #fff
+    &:before
+      bottom: 5px
+      width: 23px
+    &:after
+      top: 5px
+      width: 23px
+  &--cta
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 0 20px
+    line-height: 30px
+    text-decoration: none
+    color: #fff
+    font-weight: 700
+    text-transform: uppercase
+    background-color: $index-color-main
+    border: none
+    opacity: 0
+    visibility: hidden
+    transition: opacity .4s ease-in-out, visibility 0s .4s
+    &:focus
+      outline: none
+    &.is-active
+      opacity: 1
+      visibility: visible
+      transition: opacity .4s ease-in-out .4s
+    +tablet-down()
+      display: none
+
+.side-nav
+  position: relative
+  display: flex
+  width: 100px
+  height: 70%
+  max-height: 750px
+  flex-direction: column
+  justify-content: space-around
+  margin: 0
+  padding: 0
+  list-style-position: inside
+  z-index: 10
+  > li
+    position: relative
+    top: -5px
+    color: #fff
+    font-size: 6px
+    cursor: pointer
+    span
+      position: relative
+      top: 3px
+      left: 10px
+      color: #666
+      font-size: 14px
+      font-weight: 300
+    &:before
+      position: absolute
+      top: 3px
+      left: -33px
+      color: #555
+      font-size: 14px
+      font-weight: 300
+    &:nth-child(1):before
+      content: "01"
+    &:nth-child(2):before
+      content: "02"
+    &:nth-child(3):before
+      content: "03"
+    &:nth-child(4):before
+      content: "04"
+    &:nth-child(5):before
+      content: "05"
+    &.is-active
+      color: $index-color-main
+      transition: color .4s ease-in-out
+      &:before
+        left: -33px
+        color: #fff
+      span
+        opacity: 1
+        color: #fff
+        visibility: visible
+        transition: opacity .4s ease-in-out
+
+.intro
+  position: relative
+  display: flex
+  width: 900px
+  max-width: 75%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+  +desktop-large-down()
+    max-width: 100%
+
+.intro--banner
+  position: relative
+  height: 475px
+  +tablet-down()
+    height: 305px
+  +mobile1()
+    height: auto
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &:before
+    content: ""
+    position: absolute
+    bottom: 20px
+    left: -15px
+    right: 0
+    height: 2px
+    background-color: #282828
+    z-index: 10
+    +mobile1()
+      display: none
+  &:after
+    background-color: $index-color-main
+    +mobile1()
+      display: none
+  &-tag
+    content: ""
+    position: absolute
+    bottom: 18px
+    left: 0
+    width: 30px
+    height: 4px
+    background-color: $index-color-main
+    transition: transform .5s
+    +mobile1()
+      display: none
+  img
+    +desktop-down()
+      width: 430px
+    +tablet-down()
+      width: 330px
+  h1
+    position: relative
+    font-size: 68px
+    line-height: 1
+    z-index: 1
+    +desktop-down()
+      font-size: 55px
+    +tablet-down()
+      font-size: 44px
+    +mobile1()
+      font-size: 52px
+      margin-top: 0
+  button
+    position: relative
+    padding: 5px 17px 5px 12px
+    font-weight: 700
+    text-transform: uppercase
+    background-color: transparent
+    border: none
+    .btn-background
+      position: absolute
+      top: 0
+      left: 23px
+      right: 0
+      height: 100%
+      background-color: $index-color-main
+      z-index: -1
+      transition: left .2s ease-in-out
+    &:hover
+      .btn-background
+        left: 0
+    &:focus
+      outline: none
+    svg
+      position: relative
+      left: 5px
+      width: 15px
+      fill: #fff
+  +desktop-down()
+    height: 380px
+
+.intro--banner-inner
+  transform-style: preserve-3d
+  perspective:  1200px
+  perspective-origin: 50% 90%
+  text-align: center
+  font-size: 0
+  position: absolute
+  right: -30px
+  bottom: 21px
+  white-space: nowrap
+  +mobile1()
+    display: none
+  img
+    &:first-child
+      width: 240px
+      transform: rotateY(-45deg)
+      transform-origin: 100% 50% 0
+      margin-right: 5px
+      vertical-align: bottom
+      +tablet-down()
+        width: 180px
+    &:last-child
+      width: 280px
+      transform: rotateY(40deg)
+      transform-origin: 0% 50% 0
+      vertical-align: bottom
+      +tablet-down()
+        width: 160px
+
+.intro--options
+  display: flex
+  justify-content: space-between
+  margin: 0
+  padding: 0
+  list-style: none
+  +tablet-down()
+    display: block
+  +mobile1()
+    display: none
+  h3
+    font-size: 16px
+    text-transform: uppercase
+  p
+    margin-bottom: 0
+  &-item
+    max-width: 250px
+    text-decoration: none
+    color: #666
+    cursor: pointer
+    transition: color .2s ease-in-out
+    .intro[data-active-index="0"] &:nth-child(1)
+      color: #fff
+    .intro[data-active-index="1"] &:nth-child(2)
+      color: #fff
+    .intro[data-active-index="2"] &:nth-child(3)
+      color: #fff
+    +tablet-down()
+      max-width: 100%
+  > a
+    +desktop-down()
+      margin-right: 30px
+    +tablet-down()
+      display: block
+      max-width: 100%
+      margin: 0 0 30px 0
+    &:last-child
+      +desktop-down()
+        margin-right: 0
+      +tablet-down()
+        margin-bottom: 0
+
+.cube-wrap
+  transform-origin: 0 0
+  +desktop-down()
+    transform: scale(0.7)
+  +tablet-down()
+    transform: scale(0.5)
+  +mobile1()
+    transform: scale(1)
+
+.work
+  position: relative
+  display: flex
+  width: 960px
+  max-width: 80%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+  +desktop-large-down()
+    max-width: 100%
+  h2
+    margin: 0 0 20px 0
+    font-size: 30px
+    text-align: center
+  &--lockup
+    position: relative
+    .slider
+      position: relative
+      display: flex
+      width: 80%
+      margin: 0 auto
+      padding: 0
+      list-style: none
+      +tablet-down()
+        width: 75%
+      +mobile1()
+        width: auto
+      &--item
+        position: absolute
+        display: none
+        text-align: center
+        a
+          text-decoration: none
+          color: #858585
+        &-title
+          margin-top: 10px
+          font-size: 12px
+          font-weight: 700
+          text-transform: uppercase
+        &-description
+          display: none
+          max-width: 250px
+          margin: 0 auto
+        &-image
+          width: 150px
+          height: 150px
+          margin: 0 auto
+          border-radius: 50%
+          overflow: hidden
+          background-color: #000
+          display: flex
+          align-items: center
+          justify-content: center
+          +desktop-down()
+            width: 120px
+            height: 120px
+          +tablet-down()
+            width: 90px
+            height: 90px
+          img
+            width: 100%
+        &-left
+          top: 50%
+          left: 0
+          transform: translateY(-50%)
+          display: block
+        &-right
+          top: 50%
+          right: 0
+          transform: translateY(-50%)
+          display: block
+        &-left, &-right
+          +mobile1()
+            display: none
+        &-center
+          position: relative
+          top: 30px
+          left: 50%
+          transform: translateX(-50%)
+          display: block
+          a
+            color: #fff
+          .slider--item-title
+            margin-top: 25px
+            font-size: 16px
+          .slider--item-description
+            display: block
+          .slider--item-image
+            width: 300px
+            height: 300px
+            background-color: #6190e8
+            +desktop-down()
+              width: 240px
+              height: 240px
+            +tablet-down()
+              width: 190px
+              height: 190px
+      &--next, &--prev
+        position: absolute
+        top: 160px
+        display: flex
+        width: 50px
+        height: 50px
+        align-items: center
+        justify-content: center
+        background-color: #282828
+        border-radius: 50%
+        cursor: pointer
+        +desktop-down()
+          top: 130px
+        +tablet-down()
+          top: 105px
+        svg
+          width: 20px
+          fill: #fff
+      &--next
+        right: 0
+      &--prev
+        left: 0
+
+.about
+  position: relative
+  display: flex
+  width: 900px
+  max-width: 75%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+  +desktop-large-down()
+    max-width: 100%
+  &--banner
+    position: relative
+    height: 475px
+    +tablet-down()
+      height: 305px
+    +mobile1()
+      height: auto
+      text-align: center
+    &:before
+      content: ""
+      position: absolute
+      top: 20px
+      left: 200px
+      transform: rotate(-25deg)
+      border: 5px solid $index-color-main
+      border-right-color: transparent
+      border-bottom-color: transparent
+      +tablet-down()
+        top: 0
+        left: 125px
+      +mobile1()
+        left: 155px
+    &:after
+      content: ""
+      position: absolute
+      top: 75px
+      left: 400px
+      transform: rotate(45deg)
+      width: 10px
+      height: 10px
+      background-color: $index-color-main
+      +tablet-down()
+        top: 35px
+        left: 260px
+      +mobile1()
+        left: 310px
+    h2
+      position: relative
+      margin-top: 35px
+      font-size: 68px
+      font-weight: 900
+      line-height: 1
+      z-index: 1
+      +tablet-down()
+        margin-top: 10px
+        font-size: 44px
+      +mobile1()
+        margin-top: 0
+        font-size: 55px
+      &:before
+        content: ""
+        position: absolute
+        top: 60px
+        left: 268px
+        width: 30px
+        height: 30px
+        background-color: $index-color-main
+        border-radius: 50%
+        +tablet-down()
+          top: 28px
+          left: 168px
+        +mobile1()
+          top: 43px
+          left: 214px
+      &:after
+        content: ""
+        position: absolute
+        top: 255px
+        left: 255px
+        width: 10px
+        height: 10px
+        background-color: $index-color-main
+        +tablet-down()
+          top: 163px
+          left: 163px
+        +mobile1()
+          top: 205px
+          left: 205px
+    a
+    padding: 5px 17px 5px 0
+    text-decoration: none
+    color: #fff
+    font-weight: 700
+    text-transform: uppercase
+    background-color: transparent
+    svg
+      position: relative
+      left: 5px
+      width: 15px
+      fill: #fff
+      transition: left .2s ease-in-out
+    &:hover
+      svg
+        left: 10px
+    img
+      position: absolute
+      bottom: -90px
+      right: -12px
+      opacity: .3
+      +tablet-down()
+        width: 315px
+      +mobile1()
+        display: none
+  &--options
+    display: flex
+    max-width: 600px
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+    +mobile1()
+      display: none
+    h3
+      position: absolute
+      bottom: -38px
+      left: 10px
+      font-size: 16px
+      text-transform: uppercase
+      transition: bottom .2s ease-in-out, left .2s ease-in-out
+    a
+      position: relative
+      width: 150px
+      height: 75px
+      text-decoration: none
+      color: #fff
+      border: 10px solid $index-color-main
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      &:hover
+        h3
+          bottom: -50px
+
+.perspective
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+  &--modalview
+    position: fixed
+    perspective: 1500px
+
+.container
+  position: relative
+  transform: translateZ(0) translateX(0) rotateY(0deg)
+  min-height: 100%
+  outline: 30px solid $index-color-main
+  transition: transform .4s
+  .modalview &
+    position: absolute
+    width: 100%
+    height: 100%
+    overflow: hidden
+    backface-visibility: hidden
+  .effect-rotate-left &
+    transform-origin: 0% 50%
+    transition: transform .4s
+  .effect-rotate-left--animate &
+    transform: translateZ(-1800px) translateX(-50%) rotateY(45deg)
+    outline: 30px solid $index-color-main
+
+.outer-nav
+  position: absolute
+  top: 50%
+  left: 55%
+  transform: translateY(-50%)
+  transform-style: preserve-3d
+  margin: 0
+  padding: 0
+  list-style: none
+  text-align: center
+  visibility: hidden
+  transition: visibility 0s .2s
+  &.is-vis
+    visibility: visible
+  &--return
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: none
+    cursor: pointer
+    z-index: 11
+    &.is-vis
+      display: block
+  li
+    transform-style: preserve-3d
+    transform: translateX(350px) translateZ(-1000px)
+    font-size: 55px
+    font-weight: 100
+    opacity: 0
+    cursor: pointer
+    transition: transform .2s, opacity .2s
+    +tablet-down()
+      font-size: 44px
+    +mobile1()
+      font-size: 34px
+    &.is-vis
+      transform: translateX(0) translateZ(0)
+      opacity: 1
+      transition: transform .4s, opacity .4s
+      &:nth-child(2)
+        transition-delay: .04s
+      &:nth-child(3)
+        transition-delay: .08s
+      &:nth-child(4)
+        transition-delay: .12s
+      &:nth-child(5)
+        transition-delay: .16s
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -25%)
+      width: 110%
+      height: 15px
+      opacity: 0
+      background-color: $index-color-main
+    &.is-active
+      &:before
+        opacity: 1
+
+.app-title
+  letter-spacing: 2px
+  margin-bottom: 0.5em
+
+.app-slogan
+  font-size: 26px
+  letter-spacing: 1px
+  font-weight: 200
+  margin-top: 0
+
+.app-litemeetings
+  .slider--item-image
+    background: #000000
+    position: relative
+    img
+      width: 61.8%
+  .svg-litewx
+    fill: #ffffff
+    position: absolute
+    width: 30px
+    left: 50%
+    top: 50%
+    margin: -15px 0 0 -15px
+
+.app-meetings
+  .slider--item-image img
+    width: 61.8%
+
+.app-qrcode
+  display: inline-block
+  margin-top: 10px
+  margin-left: 20px
+  +mobile1()
+    margin-left: 0
+
+.work-logo
+  height: 32px

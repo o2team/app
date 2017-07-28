@@ -4,7 +4,7 @@
 
 # Site
 title: Aotu.io
-subtitle: 轻氧App
+subtitle: 凹凸实验室
 subtitle_desc: 凹凸实验室（<a href='//aotu.io' class='banner-link' target="_blank">aotu.io</a>）出品
 fulltitle: 聚焦知名互联网公司、团队或站点的专业资讯APP
 slogan: 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量
@@ -13,6 +13,8 @@ slogan: 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们
 appLink: https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app
 yingyongbaoLink: http://a.app.qq.com/o/simple.jsp?pkgname=com.aurorarn
 wandoujiaLink: http://www.wandoujia.com/apps/com.aurorarn
+appLinkMeetings: https://itunes.apple.com/cn/app/%E5%87%B9%E5%87%B8%E4%BC%9A%E8%AE%AE/id1248271950?mt=8
+appLinkMeetingsYYB: http://sj.qq.com/myapp/detail.htm?apkName=com.aotumeeting
 
 keywords: 轻氧, 轻氧APP, 凹凸实验室, Aotu, 前端开发, 全栈开发, IOS开发, Android开发, UED资讯, 视觉设计, 产品经理, 交互设计, 用研, 用户研究, 全栈开发
 description: 凹凸实验室(aotu.io)出品的一款聚焦知名互联网公司、团队或站点的互联网资讯APP, 阅读是维持精神呼吸的『氧』气，而『轻』意味着我们苛刻追求内容之质量。在『轻氧』里你可以随时把握国内外知名互联网公司的交互、设计、前端以及开发等资讯动态信息。
@@ -40,6 +42,7 @@ i18n_dir: :lang
 skip_render:
   - 'baidu*.html'
   - 'demo/**'
+  - 'foo/**/*'
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -136,7 +139,7 @@ disqus_shortname:
 baidu_analytics: e850b980d029480b092fdd7503c3f8de
 baidu_push: true
 google_analytics:
-cnzz_analytics: 1258539944
+at_analytics: app.aotu.io
 
 # Social
 twitter: o2circle

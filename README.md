@@ -1,9 +1,31 @@
-## 一款免费实用开源的APP
+# 凹凸实验室应用工坊
+
+## 凹凸会议 - 一款免费实用开源的会议管理APP
+
+1. 原生APP
+
+  ![下载体验](https://img.aotu.io/app/meetings/qr-mettings.png)
+
+2. 小程序版本
+
+  ![立即体验](https://img.aotu.io/app/meetings/qrcode-lite.jpg)
+
+```
+《凹凸会议》-- 白李
+
+建会议、加会议，一瞧便知开没开；
+会议码、二维码，加入会议很简单；
+写纪要、读纪要，不再错过会议总结；
+再举行、看往期，会议不再乱糟糟。
+
+```
+
+## 轻氧资讯 - 一款免费实用开源的专业资讯APP
 
 ![下载体验](https://misc.aotu.io/o2/img/app/qrcode.png)
 
 
-> <span style="color:red;font-size:16px">IOS源码计划于2017年初开放，届时应该会放在ios分支。</span>
+> <span style="color:red;font-size:16px">IOS源码计划于2017年底开放，届时应该会放在ios分支。</span>
 
 [轻氧](https:/app.aotu.io) 是 [凹凸实验室](https://aotu.io) 一不留神上架了的一款互联网技术资讯APP，它囊括了众多知名互联网公司、团队及网站的资讯，让你能一口气把业界最优质的文章读完，只要你愿意。
 

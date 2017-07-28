@@ -1,8 +1,117 @@
 @import "features"
 
+
+.page-qingy
+  .banner
+    background-image: linear-gradient(-225deg, #51B6F5 0%, #6C63EC 48%, #8D33FB 100%);
+    background-position: top left, center center
+    background-attachment: fixed, fixed
+    background-size: auto, cover
+  .phones
+    font-size: 0
+    .phones-left, .phones-right
+      display: inline-block
+      img
+        width: 100%
+    .phones-left
+        width: 167px
+        vertical-align: bottom
+        margin-right: 8px
+        +desktop-down()
+            width: 132px
+        +tablet-down()
+            width: 110px
+        +mq-max(360px)
+            width: 70px
+    .phones-right
+        width: 197px
+        +desktop-down()
+            width: 160px
+        +tablet-down()
+            width: 125px
+        +mq-max(360px)
+            width: 85px
+
+.page-meetings
+  .banner
+    position: relative
+    &::before
+      content: '\20'
+      position: absolute
+      z-index: 1;
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      opacity: .4
+      background: url(https://img.aotu.io/app/meetings/bg.jpg) 50% 50% no-repeat
+      background-size: cover
+    &::after
+      content: '\20'
+      position: absolute
+      z-index: 2;
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background: rgba(0, 0, 0, .4)
+  .phones .inner
+    transform-style: preserve-3d;
+    perspective:  800px;
+    perspective-origin: 50% 90%;
+    font-size: 0
+    margin: 0 -86px -20px
+    .phones-left, .phones-right
+      transform-style: preserve-3d;
+      display: inline-block;
+      vertical-align: bottom;
+    .phones-left
+      img
+        width: 253px;
+        transform: rotateY(-40deg);
+        transform-origin: 100% 50% 0;
+        margin-right: 5px;
+        vertical-align: bottom;
+        +desktop-down()
+            width: 218px
+        +tablet-down()
+            width: 176px
+        +mq-max(360px)
+            width: 136px
+    .phones-right
+      img
+        width: 293px;
+        transform: rotateY(36deg);
+        transform-origin: 0% 50% 0;
+        vertical-align: bottom;
+        +desktop-down()
+            width: 258px
+        +tablet-down()
+            width: 216px
+        +mq-max(360px)
+            width: 176px
+
+.loaded
+  .phones-left
+    animation: slide_from_top 2s
+  .phones-right
+    animation: slide_from_bottom 2s
+
+@keyframes slide_from_top
+    0%
+        transform: translateY(200px)
+    100%
+        transform: translateY(0px)
+@keyframes slide_from_bottom
+    0%
+        transform: translateY(-200px)
+    100%
+        transform: translateY(0px)
+
 .wx_cover
     display: none;
 .banner
+    overflow: hidden
     .actions .btn:focus
         color: inherit
     .banner-desc .banner-link:visited
@@ -10,11 +119,7 @@
     background-color: $banner-bg
     color: $banner-color
     padding: 4.5em 0 2.5em 0
-    // background-image: linear-gradient(-180deg, #3B3C40 0%, #434D63 100%)
-    background-image: linear-gradient(-225deg, #51B6F5 0%, #6C63EC 48%, #8D33FB 100%);
-    background-position: top left, center center
-    background-attachment: fixed, fixed
-    background-size: auto, cover
+
     height: 100vh
     min-height: 35em
     vhc-wrap()
@@ -34,6 +139,7 @@
     h1
         font-size: 3.25em
         margin-bottom: 0.5em
+        font-weight: 200
         +desktop-down()
             font-size: 2em
             margin-top: 0
@@ -42,6 +148,8 @@
     &-desc
         margin-bottom: 1.5em
     .content
+        position: relative
+        z-index: 3
         opacity: 0
         transform: translateX(-20px)
         transition: opacity 0.5s ease, transform 1s ease
@@ -60,6 +168,8 @@
             padding: 0 0 2em 0
             text-align: center
     .image
+        position: relative
+        z-index: 3
         transition: opacity 1s ease, transform 1s ease
         transform: translateY(20px)
         opacity: 0
@@ -77,37 +187,7 @@
             margin: 0 0 40px 0
         +tablet-down()
             margin: 0 0 30px 0
-        .loaded &
-            img:nth-child(1)
-                animation: slide_from_top 2s
-                width: 167px
-                vertical-align: bottom
-                margin-right: 8px
-                +desktop-down()
-                    width: 132px
-                +tablet-down()
-                    width: 110px
-                +mq-max(360px)
-                    width: 70px
-            img:nth-child(2)
-                animation: slide_from_bottom 2s
-                width: 197px
-                +desktop-down()
-                    width: 160px
-                +tablet-down()
-                    width: 125px
-                +mq-max(360px)
-                    width: 85px
-        @keyframes slide_from_top
-            0%
-                transform: translateY(200px)
-            100%
-                transform: translateY(0px)
-        @keyframes slide_from_bottom
-            0%
-                transform: translateY(-200px)
-            100%
-                transform: translateY(0px)
+
     .actions
         margin-top: 1.5em
     +desktop-large-down()

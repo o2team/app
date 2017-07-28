@@ -1,10 +1,11 @@
 ---
 "extends":
-  - "defaults"
+  - "eslint:recommended"
 "globals":
   "jQuery": true
   "App": true
   "Util": true
+  "Hammer": true
 "env":
   "browser": true
 

@@ -1,0 +1,59 @@
+$cube-size:= 200px
+$cube-border-color:= #fff
+$cube-panel-shadowcolor:= rgba(15, 115, 238, 1)
+$cube-panel-gutter:= 14px
+
+.cube
+  transform-style: preserve-3d;
+  transform: translateZ(0-($cube-size / 2));
+  position: relative;
+  margin: 0 auto;
+  width: $cube-size;
+  height: $cube-size;
+  transition: 1s;
+  &.show--front
+    transform: translateZ(-($cube-size / 2)) rotateY(0)
+  &.show--left
+    transform: translateZ(-($cube-size / 2)) rotateY(90deg)
+  &.show--right
+    transform: translateZ(-($cube-size / 2)) rotateY(-90deg)
+  &.show--top
+    transform: translateZ(-($cube-size / 2)) rotateX(-90deg)
+  &.show--bottom
+    transform: translateZ(-($cube-size / 2)) rotateX(90deg)
+  &.show--back
+    transform: translateZ(-($cube-size / 2)) rotateY(180deg)
+  &-wrap
+    perspective: 1100px;
+    perspective-origin: -50% -50%;
+  &-panel
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    box-shadow: inset 0 0 1px 0 $cube-border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    padding: $cube-panel-gutter;
+    &-inner
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    img
+      width: 100%;
+      box-shadow: 0 0 20px $cube-panel-shadowcolor;
+    &.is--front
+      transform: translateZ($cube-size / 2);
+    &.is--left
+      transform: rotateY(-90deg) translateZ($cube-size / 2);
+    &.is--right
+      transform: rotateY(90deg) translateZ($cube-size / 2);
+    &.is--top
+      transform: rotateX(90deg) translateZ($cube-size / 2);
+    &.is--bottom
+      transform: rotateX(-90deg) translateZ($cube-size / 2);
+    &.is--back
+      transform: rotateY(180deg) translateZ($cube-size / 2);
