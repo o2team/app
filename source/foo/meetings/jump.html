@@ -37,9 +37,9 @@
 </head>
 <body>
   <script>
-    if (App.browser.android) {
+    if (App.browser.os.android) {
       location.href = 'http://sj.qq.com/myapp/detail.htm?apkName=com.aotumeeting';
-    } else if (App.browser.ios) {
+    } else if (App.browser.os.ios) {
       location.href = 'https://itunes.apple.com/cn/app/%E5%87%B9%E5%87%B8%E4%BC%9A%E8%AE%AE/id1248271950?mt=8'; 
     } else {
       location.href = 'https://app.aotu.io'

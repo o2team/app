@@ -277,7 +277,6 @@
 
     // Slider, ADDed BY JC
     var slider = {
-      $cube: $('#cube'),
       $intro : $('.intro'),
       $introOpts : $('.intro--options-item'),
       $introBannerTag : $('.intro--banner-tag'),
@@ -297,6 +296,7 @@
         this.runIntro();
       },
       runIntro: function () {
+        if (App.browser.os.mobile) return;
         var me = this;
         clearInterval(this.timer)
         this.timer = setInterval(function () {
@@ -320,16 +320,30 @@
           '-o-transform': 'translateX(' + left + 'px, 0, 0)',
           'transform': 'translateX(' + left + 'px, 0, 0)'
         })
-        me.$cube.removeClass(['show--front', 'show--left', 'show--right', 'show--top', 'show--bottom', 'show--back'].join(' '))
         if (index === 2) {
-          me.$cube.addClass('show--left')
+          cube.show('left')
         } else {
-          me.$cube.addClass('show--front')
+          cube.show('front')
         }
       }
     }
 
     slider.init();
+
+    // cube
+    var cube = {
+      $cube: $('#cube'),
+      init: function () {
+        if (!App.browser.os.mobile) return;
+      },
+      show: function (cls) {
+        var me = this;
+        me.$cube.removeClass(['show--front', 'show--left', 'show--right', 'show--top', 'show--bottom', 'show--back'].join(' '))
+        me.$cube.addClass('show--' + cls)
+      }
+    }
+
+    cube.init();
 
 })
 

@@ -8,13 +8,13 @@
     "clean": "rm -rf public/js/libs && rm -rf public/js/mods"
   },
   "hexo": {
-    "version": "3.3.7"
+    "version": "3.3.8"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "fs-extra": "^4.0.0",
-    "hexo": "^3.3.7",
-    "hexo-deployer-git": "0.3.0",
+    "hexo": "^3.3.8",
+    "hexo-deployer-git": "0.3.1",
     "hexo-filter-asset-inline": "^1.1.1",
     "hexo-filter-cleanup": "^1.0.7",
     "hexo-generator-archive": "^0.1.4",
@@ -29,14 +29,14 @@
     "hexo-renderer-ejs": "*",
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.2.1",
-    "hexo-util": "^0.6.0",
+    "hexo-server": "^0.2.2",
+    "hexo-util": "^0.6.1",
     "hexo-wordcount": "3.0.2",
     "lodash": "^4.17.4",
     "lunr": "github:codepiano/lunr.js.git"
   },
   "devDependencies": {
-    "eslint": "^4.2.0",
+    "eslint": "^4.3.0",
     "js-yaml": "^3.9.0"
   },
   "optionalDependencies": {

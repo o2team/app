@@ -25,7 +25,7 @@
               <div class="intro--banner">
                 <h1 class="app-title">凹凸会议</h1>
                 <p class="app-slogan">"您随身携带的会议管家"</p>
-                <div class="app-qrcode">
+                <div class="app-qrcode" id="qrcode">
                   <div class="cube-wrap">
                     <figure class="cube" id="cube">
                       <div class="cube-panel is--front"><a class="cube-panel-inner" href="/foo/meetings/jump.html" title="凹凸会议APP"><img src="https://img.aotu.io/app/meetings/qr-mettings.png" /></a></div>
