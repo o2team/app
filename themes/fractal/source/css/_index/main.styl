@@ -4,6 +4,8 @@
 
 *
   box-sizing: border-box
+  margin: 0
+  padding: 0
   &:before, &:after
     box-sizing: border-box
 
@@ -18,6 +20,9 @@ body
 
 h1, h2
   font-weight: 200
+
+h3
+  margin: 1em 0 0.75em;
 
 .l-viewport
   position: relative
@@ -219,6 +224,8 @@ h1, h2
 .intro--banner
   position: relative
   height: 475px
+  +desktop-down()
+    height: 380px
   +tablet-down()
     height: 305px
   +mobile1()
@@ -253,11 +260,6 @@ h1, h2
     transition: transform .5s
     +mobile1()
       display: none
-  img
-    +desktop-down()
-      width: 430px
-    +tablet-down()
-      width: 330px
   h1
     position: relative
     font-size: 68px
@@ -296,8 +298,6 @@ h1, h2
       left: 5px
       width: 15px
       fill: #fff
-  +desktop-down()
-    height: 380px
 
 .intro--banner-inner
   transform-style: preserve-3d
@@ -550,6 +550,7 @@ h1, h2
     h2
       position: relative
       margin-top: 35px
+      margin-bottom: 0.75em;
       font-size: 68px
       font-weight: 900
       line-height: 1
@@ -748,6 +749,7 @@ h1, h2
   letter-spacing: 1px
   font-weight: 200
   margin-top: 0
+  margin-bottom: 30px;
 
 .app-litemeetings
   .slider--item-image
@@ -773,6 +775,45 @@ h1, h2
   margin-left: 20px
   +mobile1()
     margin-left: 0
+    display: none;
 
 .work-logo
   height: 32px
+
+.app-actions
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  +mobile1()
+    display: flex;
+
+.app-logo
+  margin-bottom: 20px;
+  img
+    width: 180px;
+
+.app-btn
+  display: inline-block;
+  width: 210px;
+  height: 56px;
+  margin: 0 35px;
+  font-size: 18px;
+  line-height: 56px;
+  border-radius: 28px;
+  transition: all .3s;
+  cursor: pointer;
+  a
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    &:hover
+      color: #fff;
+  &-download
+    background-image: linear-gradient(90deg, #00AEFF 0%, #3369E7 100%);
+    box-shadow: 0 2px 6px 0 rgba(51,105,231,0.4);
+    &:hover
+      box-shadow:0 4px 12px 0 rgba(51,105,231,0.4);
