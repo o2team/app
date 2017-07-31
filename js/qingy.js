@@ -1,0 +1,1 @@
+!function(t,o){t(".scrolly").on("click",function(){return n(this.getAttribute("href")),!1});var n=function(n){o.$htmlBody.animate({scrollTop:t(n).offset().top},1e3)}}(jQuery,App);

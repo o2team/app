@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Aotu.io</title>
+  <subtitle>凹凸实验室</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://app.aotu.io/"/>
+  <updated>2017-07-31T14:41:28.429Z</updated>
+  <id>https://app.aotu.io/</id>
+  
+  <author>
+    <name>凹凸实验室</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>v1.4.0 - 轻氧&amp;middot;塔罗牌</title>
+    <link href="https://app.aotu.io/notes/2016/11/18/v1-4/"/>
+    <id>https://app.aotu.io/notes/2016/11/18/v1-4/</id>
+    <published>2016-11-18T08:24:35.000Z</published>
+    <updated>2017-07-31T14:41:28.429Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="//misc.aotu.io/o2/img/app/v1-4-codename.jpg" alt="tarots" style="width: 160px;margin-bottom: 20px;"></p>
+<p>『轻氧』App 是聚焦知名互联网公司、团队或站点的专业资讯 APP，由凹凸实验室出品。</p>
+<p>V1.4 版本中，我们新增一个好玩的功能 - 「塔罗牌」。</p>
+<p><a href="https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app" title="下载试用" class="btn btn-greyline btn-mobile-full" target="_blank" rel="external">下载试用『轻氧』</a></p>
+<p><br></p>
+<h3 id="新功能：塔罗牌"><a href="#新功能：塔罗牌" class="headerlink" title="新功能：塔罗牌"></a>新功能：塔罗牌</h3><p>「看看资讯，玩玩牌」，我们其实就是想给「轻氧」加一个神秘好玩的功能，类似远古时代的「占卜」，通过用户主动给予它的一些交互引出一些未知的功能，这个版本叫「塔罗牌」，打开APP，相信你们就知道怎么玩。</p>
+<p>实在不会玩的童鞋可以看下玩法流程：</p>
+<p><img src="//misc.aotu.io/o2/img/app/v1-4-flow.png" alt="玩法"></p>
+<p><br></p>
+<h3 id="优化：Webview"><a href="#优化：Webview" class="headerlink" title="优化：Webview"></a>优化：Webview</h3><h4 id="进度条"><a href="#进度条" class="headerlink" title="进度条"></a>进度条</h4><p>为了让用户对页面的加载有清晰的感知，我们给webview增加了加载进度条。</p>
+<h4 id="导航条"><a href="#导航条" class="headerlink" title="导航条"></a>导航条</h4><p>导航条提供两种模式：<code>极简</code> 和 <code>完整</code>。</p>
+<p>1、 极简模式</p>
+<p>极简模式适用于单页面应用，只显示一个「返回」的图标。</p>
+<p>返回按钮的逻辑是：点击返回按钮后直接「关闭」webview</p>
+<p>如果URL后面带有「o2webview=lite」则启用极简模式。</p>
+<p>2、 完整模式</p>
+<p>完整模式适用于有内部导航的多页面应用。</p>
+<p>导航条交互参考「微信webview」。</p>
+<p>更多的体验彩蛋优化点，大家可以到 App 里面发现。</p>
+<p><a href="https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app" title="下载试用" class="btn btn-greyline btn-mobile-full" target="_blank" rel="external">下载试用『轻氧』</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;//misc.aotu.io/o2/img/app/v1-4-codename.jpg&quot; alt=&quot;tarots&quot; style=&quot;width: 160px;margin-bottom: 20px;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;『轻氧』App 是聚焦知名互联网公司、
+    
+    </summary>
+    
+      <category term="版本历史" scheme="https://app.aotu.io/cates/%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2/"/>
+    
+    
+      <category term="轻氧" scheme="https://app.aotu.io/tags/%E8%BD%BB%E6%B0%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>v1.3.1 - 轻氧&amp;middot;响尾蛇</title>
+    <link href="https://app.aotu.io/notes/2016/11/05/v1-3/"/>
+    <id>https://app.aotu.io/notes/2016/11/05/v1-3/</id>
+    <published>2016-11-05T02:24:35.000Z</published>
+    <updated>2017-07-31T14:41:28.429Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="//storage.360buyimg.com/mtd/home/rattlesnake1478279533726.png" alt="rattlesnake" style="width: 160px;border: 5px solid;padding: 20px;margin-bottom: 20px;"></p>
+<p>『轻氧』App 是聚焦知名互联网公司、团队或站点的专业资讯 APP，由凹凸实验室出品。</p>
+<p>V1.3 版本中，我们新增了五大互联网频道。在保证高质量文章的基础上，更进一步丰富了资讯内容。<br>另外，你还能用新版本的标签和过滤功能，检索出你最感兴趣的资讯。</p>
+<p><a href="https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app" title="下载试用" class="btn btn-greyline btn-mobile-full" target="_blank" rel="external">下载试用『轻氧』</a></p>
+<p><br></p>
+<h3 id="新增五大频道"><a href="#新增五大频道" class="headerlink" title="新增五大频道"></a>新增五大频道</h3><p>新增五大频道：原生开发、后台开发、科技酷玩、软件猎奇、创业投资。</p>
+<p><img src="//storage.360buyimg.com/mtd/home/11478278904373.jpeg" alt="新增五大频道" style="width: 375px;"><br><br></p>
+<h3 id="新功能：标签过滤，品牌筛选"><a href="#新功能：标签过滤，品牌筛选" class="headerlink" title="新功能：标签过滤，品牌筛选"></a>新功能：标签过滤，品牌筛选</h3><p>我们实现了分类算法，将每篇文章精准分类，并根据内容加上了标签。<br>如果你遇到你不想看的资讯？没关系，强大的标签过滤功能能帮你剔除掉它们。</p>
+<p><img src="//storage.360buyimg.com/mtd/home/21478279294465.jpeg" alt="标签过滤" style="width: 375px;"><br><br></p>
+<h3 id="基于-Typo-css-优化的资讯详情页"><a href="#基于-Typo-css-优化的资讯详情页" class="headerlink" title="基于 Typo.css 优化的资讯详情页"></a>基于 Typo.css 优化的资讯详情页</h3><p>新版本提供了最适合中文阅读的网页排版，一致化浏览器排版效果，提高阅读体验。</p>
+<p><img src="//storage.360buyimg.com/mtd/home/31478278904370.jpeg" alt="增加热度排行榜" style="width: 375px;"><br><br></p>
+<p>更多的体验彩蛋优化点，大家可以到 App 里面发现。</p>
+<p><a href="https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app" title="下载试用" class="btn btn-greyline btn-mobile-full" target="_blank" rel="external">下载试用『轻氧』</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;//storage.360buyimg.com/mtd/home/rattlesnake1478279533726.png&quot; alt=&quot;rattlesnake&quot; style=&quot;width: 160px;border: 5px solid;padding:
+    
+    </summary>
+    
+      <category term="版本历史" scheme="https://app.aotu.io/cates/%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2/"/>
+    
+    
+      <category term="轻氧" scheme="https://app.aotu.io/tags/%E8%BD%BB%E6%B0%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>v1.2 - 轻氧&amp;middot;北极光</title>
+    <link href="https://app.aotu.io/notes/2016/09/03/v1-2/"/>
+    <id>https://app.aotu.io/notes/2016/09/03/v1-2/</id>
+    <published>2016-09-03T02:24:35.000Z</published>
+    <updated>2017-07-31T14:41:28.429Z</updated>
+    
+    <content type="html"><![CDATA[<p>『轻氧』App 的资讯内容与其他市面上资讯 APP 相比有一个特点是：<code>来自于国内外知名的互联网公司、团队或个人</code>。<br>所以在UI层面上我们需要强调内容的<code>品牌性</code>，让用户在阅读一篇资讯的时候能够明确感知它来自于哪个公司哪个团队，抑或是哪个牛人。</p>
+<p>于是在 v1.2 版本中，我们重新设计了『轻氧』App 的 UI，设计旨要是：突出品牌。</p>
+<p><a href="https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app" title="下载试用" class="btn btn-greyline btn-mobile-full" target="_blank" rel="external">下载试用『轻氧』</a></p>
+<p><br></p>
+<h3 id="更酷炫的频道选择组件"><a href="#更酷炫的频道选择组件" class="headerlink" title="更酷炫的频道选择组件"></a>更酷炫的频道选择组件</h3><p><img src="//misc.aotu.io/o2/img/app/v1-2-1.png" alt="频道选择" style="width: 375px;"><br><br></p>
+<h3 id="卡片式的列表页"><a href="#卡片式的列表页" class="headerlink" title="卡片式的列表页"></a>卡片式的列表页</h3><p>列表页进行了全新的设计，采用了卡片式的设计风格，卡片相对于传统的图片列表来说能够承载更多的内容与元素，目的是让用户在列表页翻看资讯的时候能够对内容有更多的感知。</p>
+<p><img src="//misc.aotu.io/o2/img/app/v1-2-2.png" alt="卡片式的列表页" style="width: 772px;"><br><br></p>
+<h3 id="增加热度排行榜"><a href="#增加热度排行榜" class="headerlink" title="增加热度排行榜"></a>增加热度排行榜</h3><p><img src="//misc.aotu.io/o2/img/app/v1-2-3.png" alt="增加热度排行榜" style="width: 375px;"><br><br><br>更多的体验彩蛋优化点，大家可以到 App 里面发现。</p>
+<p><a href="https://jdc.jd.com/lab/redirect_app.html?ADTAG=o2.site.app" title="下载试用" class="btn btn-greyline btn-mobile-full" target="_blank" rel="external">下载试用『轻氧』</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;『轻氧』App 的资讯内容与其他市面上资讯 APP 相比有一个特点是：&lt;code&gt;来自于国内外知名的互联网公司、团队或个人&lt;/code&gt;。&lt;br&gt;所以在UI层面上我们需要强调内容的&lt;code&gt;品牌性&lt;/code&gt;，让用户在阅读一篇资讯的时候能够明确感知它来自于哪个公司哪个团
+    
+    </summary>
+    
+      <category term="版本历史" scheme="https://app.aotu.io/cates/%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2/"/>
+    
+    
+      <category term="轻氧" scheme="https://app.aotu.io/tags/%E8%BD%BB%E6%B0%A7/"/>
+    
+  </entry>
+  
+</feed>
