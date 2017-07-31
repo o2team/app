@@ -617,11 +617,13 @@ h3
         display: none
   &--options
     display: flex
-    max-width: 600px
+    max-width: 768px
     justify-content: space-between
     margin: 0
     padding: 0
     list-style: none
+    +tablet-down()
+      max-width: 600px
     +mobile1()
       display: none
     h3
@@ -645,6 +647,8 @@ h3
       align-items: center
       justify-content: center
       text-align: center
+      +tablet-down()
+        width: 140px
       &:hover
         h3
           bottom: -50px

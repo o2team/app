@@ -138,6 +138,10 @@
                 <img src="https://img.aotu.io/app/about-visual.png" alt="About Us">
               </div>
               <div class="about--options">
+                <a href="https://ko.aotu.io" target="_blank">
+                  <img class="work-logo" src="https://img.aotu.io/common/logo-k.svg" alt="ko"/>
+                  <h3>KO</h3>
+                </a>
                 <a href="https://elf.aotu.io" target="_blank">
                   <img class="work-logo" src="https://elf.aotu.io/img/elf.svg" alt="elf"/>
                   <h3>ELF</h3>
