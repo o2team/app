@@ -28,8 +28,8 @@
                 <div class="app-qrcode" id="qrcode">
                   <div class="cube-wrap">
                     <figure class="cube" id="cube">
-                      <div class="cube-panel is--front"><a class="cube-panel-inner" href="/foo/meetings/jump.html" title="凹凸会议APP"><img src="https://img.aotu.io/app/meetings/qr-mettings.png" /></a></div>
-                      <div class="cube-panel is--left"><a class="cube-panel-inner" href="/foo/meetings/jump.html" title="凹凸会议APP"><img src="https://img.aotu.io/app/meetings/qrcode-lite.jpg" /></a></div>
+                      <div class="cube-panel is--front"><a class="cube-panel-inner" href="/meetings" title="凹凸会议APP"><img src="https://img.aotu.io/app/meetings/qr-mettings.png" /></a></div>
+                      <div class="cube-panel is--left"><a class="cube-panel-inner" href="/meetings" title="凹凸会议APP"><img src="https://img.aotu.io/app/meetings/qrcode-lite.jpg" /></a></div>
                       <div class="cube-panel is--right">凹凸会议</div>
                       <div class="cube-panel is--top">AotuMeetings</div>
                       <div class="cube-panel is--bottom">凹凸实验室</div>
@@ -38,11 +38,11 @@
                   </div>
                 </div>
                 <div class="app-actions">
-                  <a href="/jump.html" class="app-logo">
+                  <a href="/meetings" class="app-logo">
                     <img src="https://img.aotu.io/app/meetings/logo-white.png" alt="凹凸会议APP">
                   </a>
                   <div class="app-btn app-btn-download">
-                    <a href="/jump.html">立刻下载</a>
+                    <a href="/meetings">立刻下载</a>
                   </div>
                 </div>
                 <div class="intro--banner-inner">
