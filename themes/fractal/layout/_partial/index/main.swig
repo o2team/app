@@ -143,7 +143,7 @@
                   <h3>ELF</h3>
                 </a>
                 <a href="https://at.aotu.io" target="_blank">
-                  <img class="work-logo" src="http://img.aotu.io/atui/logo-at.svg" alt="at-ui"/>
+                  <img class="work-logo" src="//img.aotu.io/atui/logo-at.svg" alt="at-ui"/>
                   <h3>AT-UI</h3>
                 </a>
                 <a href="https://gitalk.github.io" target="_blank">
